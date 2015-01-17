@@ -48,6 +48,9 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\PersoControl.cs" />
      <Compile Include="Assets\Spawner.cs" />
+     <None Include="Assets\StrumpyShaderEditor\Editor\Resources\Internal\Temp\TempShader.shader" />
+     <None Include="Assets\Shaders\PompierShader.shader" />
+     <None Include="Assets\StrumpyShaderEditor\Editor\Resources\Internal\TextureCopy.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
