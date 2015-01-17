@@ -1,28 +1,26 @@
-﻿using UnityEngine;
+
+using UnityEngine;
 using System.Collections;
 
-public class Spawner : MonoBehaviour {
+public class Spawner : MonoBehaviour
+{
+		public GameObject FallingObject;
+		private GameObject ClonedFallingObject;	
 
-
-	public GameObject test;
-	private GameObject test2;
-
-
-	private float NextSpawn = 0;
-	public int SpawnRate;
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () 
-	{
-		if (NextSpawn < Time.time) 
+		// Use this for initialization
+		void Start ()
 		{
-			test2 = MonoBehaviour.Instantiate (test, this.transform.position, this.transform.rotation) as GameObject;
-			NextSpawn += SpawnRate;
+	
 		}
-	}
+	
+		// Update is called once per frame
+		void Update ()
+		{				
+				
+		}
+
+		public void Spawn ()
+		{
+				ClonedFallingObject = MonoBehaviour.Instantiate (FallingObject, this.transform.position, this.transform.rotation) as GameObject;
+		}
 }

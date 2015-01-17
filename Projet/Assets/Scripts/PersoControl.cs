@@ -26,6 +26,7 @@ public class PersoControl : MonoBehaviour {
 		{
 			if (MoveHorizontal < 0)
 			{
+				Debug.Log ("Joueur1 : " + MoveHorizontal);
 				MoveHorizontal /= (Mathf.Abs(Distance) - (Stretch-1));
 			}
 		}
@@ -33,9 +34,11 @@ public class PersoControl : MonoBehaviour {
 		{
 			if (MoveHorizontal > 0)
 			{
+				Debug.Log ("Joueur2 : " + MoveHorizontal);
 				MoveHorizontal /= (Mathf.Abs(Distance) - (Stretch-1));
 			}
-		}		
+		}	
+
 
 		Vector2 movement = new Vector2(MoveHorizontal, 0) * Vitesse;
 		rigidbody2D.AddForce (movement);
