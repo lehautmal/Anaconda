@@ -1,10 +1,19 @@
 ﻿<Properties>
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Spawner.cs">
     <Files>
       <File FileName="Assets\Scripts\PersoControl.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\SpawnMaster.cs" Line="74" Column="35" />
       <File FileName="Assets\Scripts\Spawner.cs" Line="28" Column="8" />
+=======
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PersoControl.cs">
+    <Files>
+      <File FileName="Assets\Scripts\NetBehavior.cs" Line="16" Column="3" />
+      <File FileName="Assets\Scripts\PersoControl.cs" Line="27" Column="4" />
+      <File FileName="Assets\Scripts\Spawner.cs" Line="28" Column="2" />
+>>>>>>> 933968988e17dd73d6a58f03c5f2ed4f562ca9ef
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
