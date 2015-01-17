@@ -60,7 +60,7 @@ public class SpawnMaster : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		//SpawnerScript.Spawn ();
-		Debug.Log (Time.time);
+		//Debug.Log (Time.time);
 		if (Time.time > TopRowNextSpawn) {
 			float RandomNumber = Random.Range(0f, RowSizeF);
 			int Pos = (int)Mathf.Floor(RandomNumber);
