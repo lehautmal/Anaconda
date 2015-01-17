@@ -1,5 +1,6 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\FallingObject.cs">
     <Files>
       <File FileName="Assets\Scripts\FallingObject.cs" Line="18" Column="53" />
@@ -7,6 +8,11 @@
       <File FileName="Assets\Scripts\FallingObject.cs" Line="40" Column="1" />
       <File FileName="Assets\Scripts\PersoControl.cs" Line="25" Column="1" />
       <File FileName="Assets\Scripts\SpawnMaster.cs" Line="1" Column="1" />
+=======
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PersoControl.cs">
+    <Files>
+      <File FileName="Assets\Scripts\PersoControl.cs" Line="17" Column="2" />
+>>>>>>> 8f1b6dffecbe5531caa240e263c51edc06c2f656
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
