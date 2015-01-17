@@ -11,6 +11,9 @@ public class NetBehavior : MonoBehaviour {
 	{
 		// Ignore les collisions entre le filet et les pompiers.
 		Physics2D.IgnoreLayerCollision(8, 9, true);
+
+
+
 	}
 	
 	// Update is called once per frame
