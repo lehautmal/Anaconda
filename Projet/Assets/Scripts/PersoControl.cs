@@ -9,42 +9,36 @@ public class PersoControl : MonoBehaviour {
 	public string playerInput = "";
 	public GameObject OtherPlayer;  
 	public float Vitesse = 10;
-	private float InitialVitesse;
+	public float Stretch = 5;
 
 	// Use this for initialization
-	void Start () {
-		InitialVitesse = Vitesse;
-		Debug.Log (OtherPlayer.transform.position.x - this.transform.position.x);
+	void Start () {;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
 		MoveHorizontal = Input.GetAxis(playerInput);
-
 		float Distance = OtherPlayer.transform.position.x - this.transform.position.x;
 
 
-		if (Distance > 5)
+		if (Distance > Stretch)
 		{
-			MoveHorizontal += Distance - 5;
-			Debug.Log (MoveHorizontal);	
+			if (MoveHorizontal < 0)
+			{
+				MoveHorizontal /= (Mathf.Abs(Distance) - (Stretch-1));
+			}
 		}
-		else if (Distance < -5)
+		else if (Distance < -Stretch)
 		{
-			MoveHorizontal += Distance + 5;
-			Debug.Log (MoveHorizontal);	
+			if (MoveHorizontal > 0)
+			{
+				MoveHorizontal /= (Mathf.Abs(Distance) - (Stretch-1));
+			}
 		}		
 
-
-
-
 		Vector2 movement = new Vector2(MoveHorizontal, 0) * Vitesse;
-
 		rigidbody2D.AddForce (movement);
-
-
-
 		//rigidbody2D.velocity = movement;
 
 	}
