@@ -14,6 +14,7 @@ public class PersoControl : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		InitialVitesse = Vitesse;
+		Debug.Log (OtherPlayer.transform.position.x - this.transform.position.x);
 	}
 	
 	// Update is called once per frame
@@ -21,8 +22,22 @@ public class PersoControl : MonoBehaviour {
 
 		MoveHorizontal = Input.GetAxis(playerInput);
 
-		float Distance = Mathf.Abs(OtherPlayer.transform.position.x - this.transform.position.x);
-		Vitesse = Distance > 6 ? 6 -(Distance-6) : InitialVitesse;
+		float Distance = OtherPlayer.transform.position.x - this.transform.position.x;
+
+
+		if (Distance > 5)
+		{
+			MoveHorizontal += Distance - 5;
+			Debug.Log (MoveHorizontal);	
+		}
+		else if (Distance < -5)
+		{
+			MoveHorizontal += Distance + 5;
+			Debug.Log (MoveHorizontal);	
+		}		
+
+
+
 
 		Vector2 movement = new Vector2(MoveHorizontal, 0) * Vitesse;
 

@@ -1,8 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\NetBehavior.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PersoControl.cs">
     <Files>
-      <File FileName="Assets\Scripts\NetBehavior.cs" Line="27" Column="5" />
+      <File FileName="Assets\Scripts\NetBehavior.cs" Line="16" Column="3" />
+      <File FileName="Assets\Scripts\PersoControl.cs" Line="27" Column="4" />
+      <File FileName="Assets\Scripts\Spawner.cs" Line="28" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
