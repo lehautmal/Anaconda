@@ -128,7 +128,26 @@ public class SpawnMaster : MonoBehaviour
 						
 				}
 
-				/*
+				if ((Time.time - InitialTime) > BottomRowNextSpawn) {
+					float RandomNumber = Random.Range (0f, RowSizeF);
+					int Pos = (int)Mathf.Floor (RandomNumber);
+					BottomRowSpawners[Pos].Spawn ();
+					BottomRowNextSpawn += BottomRowSpawnRate;
+					Debug.Log ("Bottom Row" + Time.time);
+					//TopRowNextSpawn += ((Random.Range(0, RandomizerRange)) + CurrentTopRowSpawnRate);
+					
+					if (BotBad) {
+						RandomNumber = Random.Range (0f, RowSizeF);
+						int Pos2 = (int)Mathf.Floor (RandomNumber);
+						while (Pos == Pos2) {
+							RandomNumber = Random.Range (0f, RowSizeF);
+							Pos2 = (int)Mathf.Floor (RandomNumber);
+						}
+						BottomRowSpawners [Pos2].SpawnBad ();
+					}				
+				}
+		
+		/*
 		if ((Time.time - InitialTime) > MiddleRowNextSpawn) {
 			float RandomNumber = Random.Range(0f, RowSizeF);
 			int Pos = (int)Mathf.Floor(RandomNumber);
@@ -156,7 +175,8 @@ public class SpawnMaster : MonoBehaviour
 
 		public void IncreaseWave ()
 		{
-				CurrentWaveNumber++;
+		CurrentWaveNumber = 10;
+				//CurrentWaveNumber++;
 				Debug.Log ("WAVE # " + CurrentWaveNumber);
 				Interface.Level = CurrentWaveNumber;
 				switch (CurrentWaveNumber) {
@@ -176,15 +196,44 @@ public class SpawnMaster : MonoBehaviour
 						TopBad = true;
 						break;
 				case 5:
+						TopRowSpawnRate = 14;
+						MiddleRowSpawnRate = 14;
 						MidBad = true;
 						break;
 				case 6:
 						TopRowSpawnRate = 12;
 						MiddleRowSpawnRate = 12;
 						break;
+				case 7:
+						TopRowSpawnRate = 10;
+						MiddleRowSpawnRate = 10;
+						break;
+				case 8 : 
+						TopRowSpawnRate = 15;
+						MiddleRowSpawnRate = 15;
+						BottomRowSpawnRate = 15;
+						BottomRowNextSpawn = MiddleRowNextSpawn + 5;
+						break;
+				case 9 : 
+						TopRowSpawnRate = 12;
+						MiddleRowSpawnRate = 12;
+						BottomRowSpawnRate = 12;
+						BotBad = true;
+						break;
 
-				}
-				
+				case 10:
+						TopRowSpawnRate = 6;
+						MiddleRowSpawnRate = 6;
+						BottomRowSpawnRate = 6;
+						TopRowNextSpawn = 2;
+						MiddleRowNextSpawn = TopRowNextSpawn + 2 ;
+						BottomRowNextSpawn = MiddleRowNextSpawn + 2;
+						TopBad = true;
+						MidBad = true;
+						BotBad = true;
+						break;
+		}
+		
 				
 				
 		}

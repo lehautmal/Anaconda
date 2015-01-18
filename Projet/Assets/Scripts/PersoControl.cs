@@ -28,7 +28,7 @@ public class PersoControl : MonoBehaviour {
 		{
 			if (MoveHorizontal < 0)
 			{
-				MoveHorizontal /= (Mathf.Abs(Distance) - (Stretch-1))*15;
+				MoveHorizontal /= (Mathf.Abs(Distance) - (Stretch-1))*5;
 			}
 		}
 		else if (Distance < -Stretch)
@@ -36,7 +36,7 @@ public class PersoControl : MonoBehaviour {
 			if (MoveHorizontal > 0)
 			{
 				//Debug.Log ("Joueur2 : " + MoveHorizontal);
-				MoveHorizontal /= (Mathf.Abs(Distance) - (Stretch-1))*15;
+				MoveHorizontal /= (Mathf.Abs(Distance) - (Stretch-1))*5;
 			}
 		}	
 
