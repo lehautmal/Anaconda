@@ -4,8 +4,8 @@ using System.Collections;
 
 public class Spawner : MonoBehaviour
 {
-		public GameObject FallingObject;
-		private GameObject ClonedFallingObject;	
+		public GameObject OriginalFallingObject;
+	private GameObject ClonedFallingObject;	
 
 		// Use this for initialization
 		void Start ()
@@ -21,6 +21,6 @@ public class Spawner : MonoBehaviour
 
 		public void Spawn ()
 		{
-				ClonedFallingObject = MonoBehaviour.Instantiate (FallingObject, this.transform.position, this.transform.rotation) as GameObject;
+			ClonedFallingObject = MonoBehaviour.Instantiate (OriginalFallingObject, this.transform.position, this.transform.rotation) as GameObject;
 		}
 }
