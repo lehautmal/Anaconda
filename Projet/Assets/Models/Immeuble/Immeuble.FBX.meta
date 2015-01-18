@@ -29,6 +29,7 @@ ModelImporter:
     2300010: Cadre_fenetres
     2300012: Cylinder001
     2300014: rebord023
+    2300016: //RootNode
     3300000: Box008
     3300002: Box009
     3300004: Box010
@@ -37,6 +38,7 @@ ModelImporter:
     3300010: Cadre_fenetres
     3300012: Cylinder001
     3300014: rebord023
+    3300016: //RootNode
     4300000: Box008
     4300002: Box009
     4300004: Box010
@@ -45,6 +47,8 @@ ModelImporter:
     4300010: rebord023
     4300012: building_2
     4300014: Cadre_fenetres
+    4300016: Immeuble
+    7400000: Take 001
     9500000: //RootNode
   materials:
     importMaterials: 1
