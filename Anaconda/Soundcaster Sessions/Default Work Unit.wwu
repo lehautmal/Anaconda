@@ -6,11 +6,11 @@
 				<SoundcasterSession Name="New Soundcaster Session" ID="{B8410F1D-B38B-4C23-A59B-40A263923E81}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="Mega_Rush_Start" ID="{3BA17D27-B44E-4B68-BDA9-85C1EDF36AA9}" WorkUnitID="{E7F05A73-2300-4BA5-8B0C-BFEFCF1AEA79}"/>
+							<ObjectRef Name="Body_Fall_Concrete" ID="{E8189A73-B46E-42ED-99B8-D601E0DFD1F1}" WorkUnitID="{E7F05A73-2300-4BA5-8B0C-BFEFCF1AEA79}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Mega_Rush_End" ID="{D1F4A34A-796E-4D3F-A9D4-42A254048CC8}" WorkUnitID="{E7F05A73-2300-4BA5-8B0C-BFEFCF1AEA79}"/>
+							<ObjectRef Name="NPC_Female_Jump" ID="{FE5636EB-40B7-4C9C-9581-D89D7A4984E1}" WorkUnitID="{E7F05A73-2300-4BA5-8B0C-BFEFCF1AEA79}"/>
 							<Position X="1" Y="0"/>
 						</Module>
 					</ModuleList>
