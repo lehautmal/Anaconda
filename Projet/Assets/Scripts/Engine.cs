@@ -20,6 +20,7 @@ public class Engine : MonoBehaviour {
 	void Start () {
 
 		Interface = this.GetComponent<HUD> ();
+		audio.Play ();
 	}
 	
 	// Update is called once per frame

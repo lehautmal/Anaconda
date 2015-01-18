@@ -11,7 +11,13 @@ public class FallingObject : MonoBehaviour
 		public float TimeToFall;
 		public float TimeToJump;
 		public bool isGood = true;
-
+		private bool HasStartedFalling = false;
+		public AudioSource[] AudioDialogs;
+		public AudioSource[] AudioFallings;
+		public AudioSource[] AudioCrashes;
+		public AudioSource AudioNetStretch;
+		public AudioSource AudioNetRebound;
+		public AudioSource AudioNetRip;
 		bool IsDead = false;
 		bool HasFallen = false;
 		// Use this for initialization
@@ -25,30 +31,38 @@ public class FallingObject : MonoBehaviour
 				Physics2D.IgnoreLayerCollision (11, 11, true);
 				Physics.IgnoreLayerCollision (11, 11, true);
 
-				AudioSource test = GetComponent<AudioSource> ();
-		test.Play ();
+				PlaySound (AudioDialogs);
 
 		}
 	
 		// Update is called once per frame
 		void Update ()
 		{
-				if ((Time.time - InitTime) > TimeToJump && (Time.time - InitTime) < TimeToFall + 0.8) 
-				{
-					this.transform.position += new Vector3 (0, 0.02f, -0.04f); 	
-					//this.transform.rotation +=
+				if ((Time.time - InitTime) > TimeToJump && (Time.time - InitTime) < TimeToFall + 1) {
+						this.transform.position += new Vector3 (0, 0.02f, -0.04f); 	
+						//this.transform.rotation +=
 				}
 
-				if ((Time.time - InitTime) > TimeToFall && !IsDead) {
-					this.rigidbody2D.isKinematic = false;
+				if ((Time.time - InitTime) > TimeToFall && !IsDead && !HasStartedFalling) {
+						this.rigidbody2D.isKinematic = false;
+						HasStartedFalling = true;
+						PlaySound (AudioFallings);
 				}
 
 
 				if (HasFallen) {
 						this.transform.position += new Vector3 (0, 0, -0.1f);
 				}	
+				
+				if (IsDead) {
+						if (this.rigidbody2D.transform.localScale.y > 0) {
+								this.rigidbody2D.transform.localScale += new Vector3 (0, -0.1f, 0);
+						}
+						if (this.rigidbody2D.transform.position.y > -0.48){
+							this.rigidbody2D.transform.position += new Vector3 (0, -0.1f, 0);
+						}
+				}
 		}
-
 
 		void OnCollisionEnter2D (Collision2D col)
 		{
@@ -56,13 +70,21 @@ public class FallingObject : MonoBehaviour
 						if (col.gameObject.name == "Floor") {
 								this.rigidbody2D.isKinematic = true;
 								IsDead = true;
-								Engine.UpdateDeath ();	
-					} else if (col.gameObject.name == "Filet") {
-						rigidbody2D.AddForce(new Vector2(0,3));
+								Engine.UpdateDeath ();
+								PlaySound (AudioCrashes);
+								StopSound (AudioFallings);
+						} else if (col.gameObject.name == "Filet") {
+								rigidbody2D.AddForce (new Vector2 (0, 3));
 								Engine.UpdateSaved ();
 								HasFallen = true;
+								PlaySound (AudioNetRebound);
+								StopSound (AudioFallings);
 						} else if (col.gameObject.name == "Player1" && col.GetType () == typeof(CircleCollider2D)) {
+								PlaySound (AudioNetRebound);
+								StopSound (AudioFallings);
 						} else if (col.gameObject.name == "Player2") {
+								PlaySound (AudioNetRebound);
+								StopSound (AudioFallings);
 						}
 
 				} else {
@@ -82,6 +104,29 @@ public class FallingObject : MonoBehaviour
 
 		}
 
-	
+		void PlaySound (AudioSource Sound)
+		{
+				Sound.Play ();
+		}
 
+		void PlaySound (AudioSource[] Sounds)
+		{
+				if (Sounds.Length > 0) {
+						Sounds [Random.Range (0, Sounds.Length)].Play ();
+				}
+		}
+
+		void StopSound (AudioSource Sound)
+		{
+				Sound.Stop ();
+		}
+
+		void StopSound (AudioSource[] Sounds)
+		{
+				if (Sounds.Length > 0) {
+						foreach (AudioSource Sound in Sounds) {
+								Sound.Stop ();
+						}
+				}
+		}
 }
