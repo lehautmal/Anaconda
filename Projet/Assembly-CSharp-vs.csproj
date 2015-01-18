@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\PersoControl.cs" />
      <Compile Include="Assets\Scripts\SpawnMaster.cs" />
      <Compile Include="Assets\Scripts\Spawner.cs" />
+     <None Include="Assets\StreamingAssets\desc.txt" />
      <None Include="Assets\StrumpyShaderEditor\Editor\Resources\Internal\Temp\TempShader.shader" />
      <None Include="Assets\Shaders\PompierShader.shader" />
      <None Include="Assets\StrumpyShaderEditor\Editor\Resources\Internal\TextureCopy.shader" />
