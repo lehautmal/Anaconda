@@ -46,13 +46,18 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
      <Compile Include="Assets\HUD.cs" />
      <Compile Include="Assets\Scripts\AnimatorCallPompier.cs" />
+=======
+>>>>>>> 7dd4ee557d2e2b0ddba9ccc7a1de9b857c4f9eed
      <Compile Include="Assets\Scripts\Engine.cs" />
      <Compile Include="Assets\Scripts\Fader.cs" />
      <Compile Include="Assets\Scripts\FallingObject.cs" />
+     <Compile Include="Assets\Scripts\HUD.cs" />
      <Compile Include="Assets\Scripts\NetBehavior.cs" />
      <Compile Include="Assets\Scripts\PersoControl.cs" />
+     <Compile Include="Assets\Scripts\Plancher.cs" />
      <Compile Include="Assets\Scripts\SpawnMaster.cs" />
      <Compile Include="Assets\Scripts\Spawner.cs" />
      <None Include="Assets\StreamingAssets\desc.txt" />

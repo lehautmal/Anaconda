@@ -4,6 +4,7 @@
   <MonoDevelop.Ide.Workbench />
 =======
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\NetBehavior.cs">
     <Files>
       <File FileName="Assets\Scripts\NetBehavior.cs" Line="32" Column="45" />
@@ -13,6 +14,9 @@
     </Files>
   </MonoDevelop.Ide.Workbench>
 >>>>>>> 1f41c78aecef12ba6a32c60f35b3e8ce25955b2e
+=======
+  <MonoDevelop.Ide.Workbench />
+>>>>>>> 7dd4ee557d2e2b0ddba9ccc7a1de9b857c4f9eed
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
