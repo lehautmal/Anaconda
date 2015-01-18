@@ -9,15 +9,17 @@ public class NetBehavior : MonoBehaviour
 		public float WarnDistance = 7;
 		public float MaxDistance = 8;
 
-		public InteractiveCloth Cloth;
-		public GameObject 
 
-		// Use this for initialization
+		public GameObject Trampoline;
+		private InteractiveCloth InterCloth;
+		private ClothRenderer ClothRender;
+	// Use this for initialization
 		void Start ()
 		{
 				// Ignore les collisions entre le filet et les pompiers.
 				Physics2D.IgnoreLayerCollision (8, 9, true);
-
+				InterCloth = Trampoline.GetComponent<InteractiveCloth> ();
+				ClothRender = Trampoline.GetComponent<ClothRenderer> ();
 		}
 
 		// Update is called once per frame
@@ -32,8 +34,12 @@ public class NetBehavior : MonoBehaviour
 				this.transform.localScale = VectorScale;
 
 				if (Distance > MaxDistance) {
-						Cloth.tearFactor = 0.5f;
+						InterCloth.tearFactor = 0.5f;
 				}
-				
-		}
+
+			if (Distance > WarnDistance)
+			{
+			ClothRender.material.SetFloat("_Blend", 1 - (MaxDistance - Distance));		
+			}
+}
 }

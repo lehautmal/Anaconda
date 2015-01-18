@@ -4,12 +4,14 @@ using System.Collections;
 public class FallingObject : MonoBehaviour
 {
 		bool HasFallen = false;
-	private Material ObjectMaterial;
+		private Material ObjectMaterial;
+
+		private Engine Engine;
 
 		// Use this for initialization
 		void Start ()
 		{
-			Physics2D.IgnoreLayerCollision(11, 11, true);
+			Engine = GameObject.Find ("Engine").GetComponent<Engine>();
 		}
 	
 		// Update is called once per frame
@@ -20,13 +22,15 @@ public class FallingObject : MonoBehaviour
 				}	
 		}
 
+
+
 		void OnCollisionEnter2D (Collision2D col)
 		{
-
-				Debug.Log ("OnCollisionEnter was called");
-		Debug.Log (col.GetType());
+//				Debug.Log ("OnCollisionEnter was called");
+//				Debug.Log (col.GetType());
 				if (col.gameObject.name == "Floor") {
-					renderer.material.color = Color.red;						
+					renderer.material.color = Color.red;
+					Engine.updateDeath();
 				} else if (col.gameObject.name == "Filet") {
 					renderer.material.color = Color.green;	
 				} else if (col.gameObject.name == "Player1" && col.GetType() == typeof(CircleCollider2D)) {
