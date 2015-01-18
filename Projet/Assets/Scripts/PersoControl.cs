@@ -14,18 +14,32 @@ public class PersoControl : MonoBehaviour {
 	public Animator Animateur;
 	public GameObject Pompier;
 
+		public bool IsStunned = false;
+		public float StunDuration = 1;
+		public float StunEndTime;
+		public ParticleSystem StunFX;
 
 	// Use this for initialization
 	void Start () {
-
+		StunFX.renderer.enabled = false;
+		StunFX.Pause ();
 		Animateur = Pompier.GetComponent<Animator>();
-
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
 		MoveHorizontal = Input.GetAxis(playerInput);
+		
+		if (IsStunned) {
+						MoveHorizontal *= -1;
+						if (Time.time > StunEndTime) {
+								IsStunned = false;
+								StunFX.renderer.enabled = false;
+								StunFX.Pause ();
+						}			
+				}
+		
 		float Distance = OtherPlayer.transform.position.x - this.transform.position.x;
 
 		if (MoveHorizontal != 0)
@@ -56,4 +70,14 @@ public class PersoControl : MonoBehaviour {
 		rigidbody2D.velocity = movement;
 
 	}
+	
+	void OnCollisionEnter2D (Collision2D col)
+		{
+			if (col.gameObject.name != "Floor" && col.gameObject.name != "Filet" && col.gameObject.name != "Plane_coll") {						
+						IsStunned = true;
+						StunFX.renderer.enabled = true;
+						StunFX.Play ();
+						StunEndTime = Time.time + StunDuration;
+				}
+		}
 }

@@ -4,7 +4,6 @@ using System.Collections;
 public class SpawnMaster : MonoBehaviour
 {
 		private HUD Interface;
-
 		private const int RowSize = 9;
 		private const float RowSizeF = 9f;
 		public double TopRowSpawnRate = 1000.0; // en milliseconde
@@ -129,25 +128,25 @@ public class SpawnMaster : MonoBehaviour
 				}
 
 				if ((Time.time - InitialTime) > BottomRowNextSpawn) {
-					float RandomNumber = Random.Range (0f, RowSizeF);
-					int Pos = (int)Mathf.Floor (RandomNumber);
-					BottomRowSpawners[Pos].Spawn ();
-					BottomRowNextSpawn += BottomRowSpawnRate;
-					Debug.Log ("Bottom Row" + Time.time);
-					//TopRowNextSpawn += ((Random.Range(0, RandomizerRange)) + CurrentTopRowSpawnRate);
+						float RandomNumber = Random.Range (0f, RowSizeF);
+						int Pos = (int)Mathf.Floor (RandomNumber);
+						BottomRowSpawners [Pos].Spawn ();
+						BottomRowNextSpawn += BottomRowSpawnRate;
+						Debug.Log ("Bottom Row" + Time.time);
+						//TopRowNextSpawn += ((Random.Range(0, RandomizerRange)) + CurrentTopRowSpawnRate);
 					
-					if (BotBad) {
-						RandomNumber = Random.Range (0f, RowSizeF);
-						int Pos2 = (int)Mathf.Floor (RandomNumber);
-						while (Pos == Pos2) {
-							RandomNumber = Random.Range (0f, RowSizeF);
-							Pos2 = (int)Mathf.Floor (RandomNumber);
-						}
-						BottomRowSpawners [Pos2].SpawnBad ();
-					}				
+						if (BotBad) {
+								RandomNumber = Random.Range (0f, RowSizeF);
+								int Pos2 = (int)Mathf.Floor (RandomNumber);
+								while (Pos == Pos2) {
+										RandomNumber = Random.Range (0f, RowSizeF);
+										Pos2 = (int)Mathf.Floor (RandomNumber);
+								}
+								BottomRowSpawners [Pos2].SpawnBad ();
+						}				
 				}
 		
-		/*
+				/*
 		if ((Time.time - InitialTime) > MiddleRowNextSpawn) {
 			float RandomNumber = Random.Range(0f, RowSizeF);
 			int Pos = (int)Mathf.Floor(RandomNumber);
@@ -175,46 +174,48 @@ public class SpawnMaster : MonoBehaviour
 
 		public void IncreaseWave ()
 		{
-		CurrentWaveNumber = 10;
+				CurrentWaveNumber = 10;
 				//CurrentWaveNumber++;
 				Debug.Log ("WAVE # " + CurrentWaveNumber);
 				Interface.Level = CurrentWaveNumber;
+				
 				switch (CurrentWaveNumber) {
 				case 1:				
-						TopRowSpawnRate = 10;
+						TopRowSpawnRate = 8;
 						TopRowNextSpawn = 2;
 						break;
 				case 2:
-						TopRowSpawnRate = 8;
+						TopRowSpawnRate = 7;
 						break;
 				case 3:
-						TopRowSpawnRate = 16;
-						MiddleRowSpawnRate = 16;
-						MiddleRowNextSpawn = TopRowNextSpawn + 8;
+						TopRowSpawnRate = 14;
+						MiddleRowSpawnRate = 14;
+						MiddleRowNextSpawn = TopRowNextSpawn + 7;
 						break;
-				case 4: 
+
+				case 4:
 						TopBad = true;
 						break;
 				case 5:
-						TopRowSpawnRate = 14;
-						MiddleRowSpawnRate = 14;
+						TopRowSpawnRate = 12;
+						MiddleRowSpawnRate = 12;
 						MidBad = true;
 						break;
 				case 6:
-						TopRowSpawnRate = 12;
-						MiddleRowSpawnRate = 12;
-						break;
-				case 7:
 						TopRowSpawnRate = 10;
 						MiddleRowSpawnRate = 10;
 						break;
-				case 8 : 
-						TopRowSpawnRate = 15;
-						MiddleRowSpawnRate = 15;
-						BottomRowSpawnRate = 15;
-						BottomRowNextSpawn = MiddleRowNextSpawn + 5;
+				case 7:
+						TopRowSpawnRate = 8;
+						MiddleRowSpawnRate = 8;
 						break;
-				case 9 : 
+				case 8: 
+						TopRowSpawnRate = 12;
+						MiddleRowSpawnRate = 12;
+						BottomRowSpawnRate = 12;
+						BottomRowNextSpawn = MiddleRowNextSpawn + 4;
+						break;
+				case 9: 
 						TopRowSpawnRate = 9;
 						MiddleRowSpawnRate = 9;
 						BottomRowSpawnRate = 9;
@@ -226,13 +227,13 @@ public class SpawnMaster : MonoBehaviour
 						MiddleRowSpawnRate = 6;
 						BottomRowSpawnRate = 6;
 						TopRowNextSpawn = 2;
-						MiddleRowNextSpawn = TopRowNextSpawn + 2 ;
+						MiddleRowNextSpawn = TopRowNextSpawn + 2;
 						BottomRowNextSpawn = MiddleRowNextSpawn + 2;
 						TopBad = true;
 						MidBad = true;
 						BotBad = true;
 						break;
-		}
+				}
 		
 				
 				

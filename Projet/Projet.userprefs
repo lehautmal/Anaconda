@@ -1,10 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\FallingObject.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PersoControl.cs">
     <Files>
-      <File FileName="Assets\Scripts\NetBehavior.cs" Line="14" Column="3" />
-      <File FileName="Assets\Scripts\PersoControl.cs" Line="41" Column="5" />
-      <File FileName="Assets\Scripts\FallingObject.cs" Line="74" Column="8" />
+      <File FileName="Assets\Scripts\PersoControl.cs" Line="35" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
