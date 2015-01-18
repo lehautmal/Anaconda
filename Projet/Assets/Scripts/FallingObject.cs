@@ -3,19 +3,22 @@ using System.Collections;
 
 public class FallingObject : MonoBehaviour
 {
-		bool HasFallen = false;
+
 		private Material ObjectMaterial;
 		private Engine Engine;
 		private NetBehavior Net;
 		private float InitTime;
-		public float DelayBeforeJump;
+		public float TimeToFall;
+		public float TimeToJump;
 		public bool isGood = true;
 
+		bool IsDead = false;
+		bool HasFallen = false;
 		// Use this for initialization
 		void Start ()
-		{
-				
+		{			
 				Engine = GameObject.Find ("Engine").GetComponent<Engine> ();
+				Net = GameObject.FindGameObjectWithTag ("Net").GetComponent<NetBehavior> ();
 				this.rigidbody2D.isKinematic = true;
 				InitTime = Time.time;	
 
@@ -27,38 +30,52 @@ public class FallingObject : MonoBehaviour
 		// Update is called once per frame
 		void Update ()
 		{
-				if (HasFallen) {
-						this.transform.position += new Vector3 (0, 0, -0.01f);
-				}	
-				
-				if ((Time.time - InitTime) > DelayBeforeJump) {
-						this.rigidbody2D.isKinematic = false;	
+				if ((Time.time - InitTime) > TimeToJump && (Time.time - InitTime) < TimeToFall+1) 
+				{
+					this.transform.position += new Vector3 (0, 0.02f, -0.04f); 	
+					//this.transform.rotation +=
 				}
+
+				if ((Time.time - InitTime) > TimeToFall && !IsDead) {
+					this.rigidbody2D.isKinematic = false;
+				}
+
+
+				if (HasFallen) {
+						this.transform.position += new Vector3 (0, 0, -0.1f);
+				}	
 		}
+
 
 		void OnCollisionEnter2D (Collision2D col)
 		{
 				if (isGood) {	
 						if (col.gameObject.name == "Floor") {
-								Engine.UpdateDeath ();
-						} else if (col.gameObject.name == "Filet") {
+								this.rigidbody2D.isKinematic = true;
+								IsDead = true;
+								Engine.UpdateDeath ();	
+					} else if (col.gameObject.name == "Filet") {
+						rigidbody2D.AddForce(new Vector2(0,3));
 								Engine.UpdateSaved ();
+								HasFallen = true;
 						} else if (col.gameObject.name == "Player1" && col.GetType () == typeof(CircleCollider2D)) {
 						} else if (col.gameObject.name == "Player2") {
 						}
 
-				} else 
-				{
-					if (col.gameObject.name == "Floor") {						
-					} else if (col.gameObject.name == "Filet") {
-						Engine.GameOver();
-					} else if (col.gameObject.name == "Player1" && col.GetType () == typeof(CircleCollider2D)) {
-					} else if (col.gameObject.name == "Player2") {
-					}
-			}
-		this.collider2D.enabled = false;
-		Destroy (this.gameObject, 1);
-		HasFallen = true;
+				} else {
+						if (col.gameObject.name == "Floor") {
+								this.rigidbody2D.isKinematic = true;
+								IsDead = true;
+						} else if (col.gameObject.name == "Filet") {
+								Net.InterCloth.tearFactor = 0.01f;
+								Engine.GameOver ();
+						} else if (col.gameObject.name == "Player1" && col.GetType () == typeof(CircleCollider2D)) {
+						} else if (col.gameObject.name == "Player2") {
+						}
+				}
+				this.collider2D.enabled = false;
+				Destroy (this.gameObject, 3);
+				
 
 		}
 

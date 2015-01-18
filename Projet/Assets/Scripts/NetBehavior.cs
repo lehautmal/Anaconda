@@ -10,7 +10,7 @@ public class NetBehavior : MonoBehaviour
 		public float MaxDistance = 8;
 		public float MinDistance = 4;
 		public GameObject Trampoline;
-		private InteractiveCloth InterCloth;
+		public InteractiveCloth InterCloth;
 		private ClothRenderer ClothRender;
 		// Use this for initialization
 		void Start ()

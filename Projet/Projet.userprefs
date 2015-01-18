@@ -1,8 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Spawner.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PersoControl.cs">
     <Files>
-      <File FileName="Assets\Scripts\Spawner.cs" Line="32" Column="4" />
+      <File FileName="Assets\Scripts\PersoControl.cs" Line="98" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

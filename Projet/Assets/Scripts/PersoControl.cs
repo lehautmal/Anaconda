@@ -15,6 +15,10 @@ public class PersoControl : MonoBehaviour {
 	public Animator Animateur;
 	public GameObject Pompier;
 
+		public bool IsStunned = false;
+		public float StunDuration = 1;
+		public float StunEndTime;
+		public ParticleSystem StunFX;
 
 	public GameObject Footsteps;
 	private float RandomNumber;
@@ -22,16 +26,26 @@ public class PersoControl : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
+		StunFX.renderer.enabled = false;
+		StunFX.Pause ();
 		Animateur = Pompier.GetComponent<Animator>();
-		AkTest = GetComponent<AkAmbient>();
-
+		
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
 		MoveHorizontal = Input.GetAxis(playerInput);
+		
+		if (IsStunned) {
+						MoveHorizontal *= -1;
+						if (Time.time > StunEndTime) {
+								IsStunned = false;
+								StunFX.renderer.enabled = false;
+								StunFX.Pause ();
+						}			
+				}
+		
 		float Distance = OtherPlayer.transform.position.x - this.transform.position.x;
 
 		if (MoveHorizontal != 0){
@@ -45,7 +59,7 @@ public class PersoControl : MonoBehaviour {
 		{
 			if (MoveHorizontal < 0)
 			{
-				MoveHorizontal /= (Mathf.Abs(Distance) - (Stretch-1))*15;
+				MoveHorizontal /= (Mathf.Abs(Distance) - (Stretch-1))*5;
 			}
 		}
 		else if (Distance < -Stretch)
@@ -53,8 +67,9 @@ public class PersoControl : MonoBehaviour {
 			if (MoveHorizontal > 0)
 			{
 				//Debug.Log ("Joueur2 : " + MoveHorizontal);
-				MoveHorizontal /= (Mathf.Abs(Distance) - (Stretch-1))*15;
+				MoveHorizontal /= (Mathf.Abs(Distance) - (Stretch-1))*5;
 				Animateur.SetBool("IsMoving",true);
+
 			}
 		}	
 
@@ -68,4 +83,15 @@ public class PersoControl : MonoBehaviour {
 	{
 		Footsteps = MonoBehaviour.Instantiate (FootstepsBox, this.transform.position, this.transform.rotation) as GameObject;
 	}*/
+
+	
+	void OnCollisionEnter2D (Collision2D col)
+		{
+			if (col.gameObject.name != "Floor" && col.gameObject.name != "Filet" && col.gameObject.name != "Plane_coll") {						
+						IsStunned = true;
+						StunFX.renderer.enabled = true;
+						StunFX.Play ();
+						StunEndTime = Time.time + StunDuration;
+				}
+		}
 }
