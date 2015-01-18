@@ -92,6 +92,7 @@ public class PersoControl : MonoBehaviour {
 						StunFX.renderer.enabled = true;
 						StunFX.Play ();
 						StunEndTime = Time.time + StunDuration;
+						Animateur.SetBool("PlayerHit", true);
 				}
 		}
 }
