@@ -46,7 +46,11 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
      <Compile Include="Assets\Scripts\AnimatorCallPompier.cs" />
+=======
+     <Compile Include="Assets\HUD.cs" />
+>>>>>>> 1f41c78aecef12ba6a32c60f35b3e8ce25955b2e
      <Compile Include="Assets\Scripts\Engine.cs" />
      <Compile Include="Assets\Scripts\Fader.cs" />
      <Compile Include="Assets\Scripts\FallingObject.cs" />

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E7F05A73-2300-4BA5-8B0C-BFEFCF1AEA79}" SchemaVersion="69">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{E7F05A73-2300-4BA5-8B0C-BFEFCF1AEA79}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Body_Fall_Concrete" ID="{E8189A73-B46E-42ED-99B8-D601E0DFD1F1}">
+					<ChildrenList>
+						<Action Name="Play" ID="{1A7F5870-CFBB-4544-B0BC-DCC0009363BF}" ShortID="758046186" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{88D415CA-2021-4E3C-A821-2820AF052AB5}" Global="false">
+									<ObjectRef Name="Body_Fall_Concrete" ID="{6766A2D6-0C02-4751-B87E-047CC3E120E5}" WorkUnitID="{2AEE07AE-2F21-4BCF-A0A2-89CF5F3358FD}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Mega_Rush_Start" ID="{3BA17D27-B44E-4B68-BDA9-85C1EDF36AA9}">
+					<ChildrenList>
+						<Action Name="Play" ID="{47AB3EFE-4B57-4293-8289-0D547605030D}" ShortID="246604504" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{64C44423-B41E-4279-82D8-FB0677100AC0}" Global="false">
+									<ObjectRef Name="Mega_Rush" ID="{A2B47445-6D6E-4ADA-B028-ED394DC54849}" WorkUnitID="{2AEE07AE-2F21-4BCF-A0A2-89CF5F3358FD}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Mega_Rush_End" ID="{D1F4A34A-796E-4D3F-A9D4-42A254048CC8}">
+					<ChildrenList>
+						<Action Name="Break" ID="{3FEC36AD-0CF3-4242-833C-DFF6E225481F}" ShortID="354486525" Type="Break" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{E96AA82E-1903-4E3A-A86C-913200406EB4}" Global="false">
+									<ObjectRef Name="Mega_Rush" ID="{A2B47445-6D6E-4ADA-B028-ED394DC54849}" WorkUnitID="{2AEE07AE-2F21-4BCF-A0A2-89CF5F3358FD}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Music_Ingame_Start" ID="{CE056DD8-633B-411A-8D0F-38262286FD7A}"/>
+				<Event Name="Music_Ingame_End" ID="{196EB73B-0DAB-4D8D-B4DE-B9D08B2941CF}"/>
+				<Event Name="Music_UI_Start" ID="{D2D855C9-07B4-4262-B751-9186BEA054DB}"/>
+				<Event Name="Music_UI_End" ID="{2B23034F-16B8-4A05-84E3-44445CF997B6}"/>
+				<Event Name="NPC_Male_Jump" ID="{B38354EF-D7A0-4C81-8588-51DE99AD97A5}"/>
+				<Event Name="NPC_Female_Jump" ID="{FE5636EB-40B7-4C9C-9581-D89D7A4984E1}"/>
+				<Event Name="NPC_Old_Jump" ID="{318F75AB-6775-45A1-898E-869557378CFA}"/>
+				<Event Name="NPC_Female_Spawn" ID="{6681D70D-72A0-49BF-BA1F-5A070A3DAB5F}"/>
+				<Event Name="NPC_Male_Spawn" ID="{A64B01CE-475B-4F8B-B775-E3F0F0B9EE54}"/>
+				<Event Name="NPC_Old_Spawn" ID="{B42A24C7-92F3-4D40-9ADB-4771AC5CA40A}"/>
+				<Event Name="Player_01_Success" ID="{E98A64D8-9201-46FC-A952-15E7ACEDA618}"/>
+				<Event Name="Player_01_Fail" ID="{75466CF6-1429-4579-9E99-8E3232459E72}"/>
+				<Event Name="Player_02_Fail" ID="{B57F7ABE-135C-4325-9826-27E7D93322A3}"/>
+				<Event Name="Player_01_Headrush" ID="{1181952B-C497-4DE3-8FCF-E754A49C6A7B}"/>
+				<Event Name="Player_02_Success" ID="{F97DC0AD-E2C8-431F-A791-8C34C086CFEF}"/>
+				<Event Name="Player_02_Headrush" ID="{4EA59BDC-D78C-45B8-9599-DE975D21AA60}"/>
+				<Event Name="Player_01_FS" ID="{CF906DEC-E711-41DB-BC44-2DD27CF5BF36}"/>
+				<Event Name="Player_02_FS" ID="{CF21C90D-D40C-48CA-8BDF-59F493C9DB5F}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

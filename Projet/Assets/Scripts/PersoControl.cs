@@ -37,7 +37,6 @@ public class PersoControl : MonoBehaviour {
 		{
 			if (MoveHorizontal < 0)
 			{
-				Debug.Log ("Joueur1 : " + Distance);
 				MoveHorizontal /= (Mathf.Abs(Distance) - (Stretch-1))*15;
 			}
 		}
@@ -53,7 +52,6 @@ public class PersoControl : MonoBehaviour {
 
 
 		Vector2 movement = new Vector2(MoveHorizontal, 0) * Vitesse;
-		rigidbody2D.AddForce (movement);
 		rigidbody2D.velocity = movement;
 
 	}

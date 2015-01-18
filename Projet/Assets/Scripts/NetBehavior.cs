@@ -8,12 +8,11 @@ public class NetBehavior : MonoBehaviour
 		public GameObject Player2;
 		public float WarnDistance = 7;
 		public float MaxDistance = 8;
-
-
+		public float MinDistance = 4;
 		public GameObject Trampoline;
 		private InteractiveCloth InterCloth;
 		private ClothRenderer ClothRender;
-	// Use this for initialization
+		// Use this for initialization
 		void Start ()
 		{
 				// Ignore les collisions entre le filet et les pompiers.
@@ -25,9 +24,8 @@ public class NetBehavior : MonoBehaviour
 		// Update is called once per frame
 		void Update ()
 		{				
-				float Distance = Mathf.Abs (Player1.transform.position.x - Player2.transform.position.x);
-				float height = Distance < WarnDistance ? -1 + (Distance / WarnDistance) : 0.3f;
-				Vector3 VectorDistance = new Vector3 (Distance / 2, height, 0);
+				float Distance = Mathf.Abs (Player1.transform.position.x - Player2.transform.position.x);				
+				Vector3 VectorDistance = new Vector3 (Distance / 2, 0.5f, 0);
 				this.transform.position = Player1.transform.position + VectorDistance;
 
 				Vector3 VectorScale = new Vector3 (Distance, this.transform.localScale.y, this.transform.localScale.z);
@@ -35,12 +33,27 @@ public class NetBehavior : MonoBehaviour
 
 				if (Distance > MaxDistance) {
 						InterCloth.tearFactor = 0.5f;
+						Engine Engine = GameObject.Find ("Engine").GetComponent<Engine> ();
+						Engine.GameOver();
 				}
 
-			if (Distance > WarnDistance)
-			{
-			Debug.Log ("TEST");
-			ClothRender.material.SetFloat("_Blend", 1 - (MaxDistance - Distance));		
-			}
-}
+				if (Distance > WarnDistance) {
+						ClothRender.material.SetFloat ("_Blend", 1 - (MaxDistance - Distance));		
+				}
+
+				if (Distance < MinDistance) {
+						this.collider2D.enabled = false;	
+				} else {
+						this.collider2D.enabled = true;
+				}
+		}
+
+		/*
+		public void AddCollider (Collider col)
+		{
+				Debug.Log (col);
+				InterCloth.AttachToCollider (col);
+		}
+		*/
+
 }
