@@ -11,9 +11,14 @@ public class PersoControl : MonoBehaviour {
 	public float Vitesse = 10;
 	public float Stretch = 7;
 
+	public Animator Animateur;
+	public GameObject Pompier;
+
+
 	// Use this for initialization
 	void Start () {
 
+		Animateur = Pompier.GetComponent<Animator>();
 
 	}
 	
@@ -23,6 +28,10 @@ public class PersoControl : MonoBehaviour {
 		MoveHorizontal = Input.GetAxis(playerInput);
 		float Distance = OtherPlayer.transform.position.x - this.transform.position.x;
 
+		if (MoveHorizontal != 0)
+			Animateur.SetBool("IsMoving",true);
+		else
+			Animateur.SetBool("IsMoving",false);
 
 		if (Distance > Stretch)
 		{
@@ -38,6 +47,7 @@ public class PersoControl : MonoBehaviour {
 			{
 				//Debug.Log ("Joueur2 : " + MoveHorizontal);
 				MoveHorizontal /= (Mathf.Abs(Distance) - (Stretch-1))*15;
+				Animateur.SetBool("IsMoving",true);
 			}
 		}	
 
