@@ -29,6 +29,14 @@
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="NPC_Old_Jump" ID="{318F75AB-6775-45A1-898E-869557378CFA}" WorkUnitID="{E7F05A73-2300-4BA5-8B0C-BFEFCF1AEA79}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Body_Fall_Concrete" ID="{E8189A73-B46E-42ED-99B8-D601E0DFD1F1}" WorkUnitID="{E7F05A73-2300-4BA5-8B0C-BFEFCF1AEA79}"/>
+							<Position X="0" Y="3"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="NPC_Female_Spawn" ID="{6681D70D-72A0-49BF-BA1F-5A070A3DAB5F}" WorkUnitID="{E7F05A73-2300-4BA5-8B0C-BFEFCF1AEA79}"/>
 							<Position X="1" Y="0"/>
 						</Module>
@@ -47,10 +55,6 @@
 						<Module>
 							<ObjectRef Name="Mega_Rush_Start" ID="{3BA17D27-B44E-4B68-BDA9-85C1EDF36AA9}" WorkUnitID="{E7F05A73-2300-4BA5-8B0C-BFEFCF1AEA79}"/>
 							<Position X="3" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Body_Fall_Concrete" ID="{E8189A73-B46E-42ED-99B8-D601E0DFD1F1}" WorkUnitID="{E7F05A73-2300-4BA5-8B0C-BFEFCF1AEA79}"/>
-							<Position X="3" Y="1"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Music_Ingame_Start" ID="{CE056DD8-633B-411A-8D0F-38262286FD7A}" WorkUnitID="{E7F05A73-2300-4BA5-8B0C-BFEFCF1AEA79}"/>

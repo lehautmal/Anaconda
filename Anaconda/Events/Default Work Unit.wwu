@@ -19,14 +19,14 @@
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Stop" ID="{24FAB640-8A37-4373-BB90-835AC9D6C2F8}" ShortID="172167118" Type="Stop" Scope="One" Global="false">
+						<Action Name="Break" ID="{24FAB640-8A37-4373-BB90-835AC9D6C2F8}" ShortID="172167118" Type="Break" Scope="One" Global="false">
 							<ElementList>
 								<Element ID="{85995102-B4C0-4920-B5C6-9002376382A5}" Global="false">
 									<ObjectRef Name="NPC_Old_Jump" ID="{25A6A60A-AA9A-4119-B131-9AEED920EEA1}" WorkUnitID="{2AEE07AE-2F21-4BCF-A0A2-89CF5F3358FD}"/>
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Stop" ID="{066228BA-C898-48EF-96FF-C18A5D328079}" ShortID="502559396" Type="Stop" Scope="One" Global="false">
+						<Action Name="Break" ID="{066228BA-C898-48EF-96FF-C18A5D328079}" ShortID="502559396" Type="Break" Scope="One" Global="false">
 							<ElementList>
 								<Element ID="{B1A14395-F3E2-47E5-8297-050130EDBED5}" Global="false">
 									<ObjectRef Name="NPC_Male_Jump" ID="{C5BB2703-938A-4359-BE6E-970CE7F54885}" WorkUnitID="{2AEE07AE-2F21-4BCF-A0A2-89CF5F3358FD}"/>
