@@ -140,6 +140,7 @@ ModelImporter:
     4300000: Pompier
     7400000: Marche
     7400002: Idle
+    7400004: Stun
     9500000: //RootNode
     13700000: Pompier
   materials:
@@ -334,8 +335,8 @@ ModelImporter:
     - serializedVersion: 16
       name: Idle
       takeName: Take 001
-      firstFrame: 0
-      lastFrame: .100000001
+      firstFrame: 25
+      lastFrame: 72
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -500,6 +501,164 @@ ModelImporter:
       - path: IK Chain003
         weight: 1
       - path: IK Chain004
+        weight: 1
+      - path: Pompier
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Stun
+      takeName: Take 001
+      firstFrame: 66
+      lastFrame: 96
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bip001
+        weight: 1
+      - path: Bip001/Bassin
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Cuisse_D
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Cuisse_D/Bip001 R Calf
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Cuisse_D/Bip001 R Calf/Bip001 R Foot
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Cuisse_D/Bip001 R Calf/Bip001 R Foot/Bip001
+          R Toe0
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Cuisse_D/Bip001 R Calf/Bip001 R Foot/Bip001
+          R Toe0/Bip001 R Toe01
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Cuisse_D/Bip001 R Calf/Bip001 R Foot/Bip001
+          R Toe0/Bip001 R Toe01/Bip001 R Toe02
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Cuisse_D/Bip001 R Calf/Bip001 R Foot/Bip001
+          R Toe0/Bip001 R Toe01/Bip001 R Toe02/Bip001 R Toe0Nub
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Cuisse_G
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Cuisse_G/Bip001 L Calf
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Cuisse_G/Bip001 L Calf/Bip001 L Foot
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Cuisse_G/Bip001 L Calf/Bip001 L Foot/Bip001
+          L Toe0
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Cuisse_G/Bip001 L Calf/Bip001 L Foot/Bip001
+          L Toe0/Bip001 L Toe01
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Cuisse_G/Bip001 L Calf/Bip001 L Foot/Bip001
+          L Toe0/Bip001 L Toe01/Bip001 L Toe02
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Cuisse_G/Bip001 L Calf/Bip001 L Foot/Bip001
+          L Toe0/Bip001 L Toe01/Bip001 L Toe02/Bip001 L Toe0Nub
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Epine_dorsale02
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Epine_dorsale02/Epine_dorsale03
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Epine_dorsale02/Epine_dorsale03/Cou
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Epine_dorsale02/Epine_dorsale03/Cou/Epaule_D
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Epine_dorsale02/Epine_dorsale03/Cou/Epaule_D/Bras_D
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Epine_dorsale02/Epine_dorsale03/Cou/Epaule_D/Bras_D/Avant-Bras_D
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Epine_dorsale02/Epine_dorsale03/Cou/Epaule_D/Bras_D/Avant-Bras_D/Main_D
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Epine_dorsale02/Epine_dorsale03/Cou/Epaule_D/Bras_D/Avant-Bras_D/Main_D/Doigt_D02
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Epine_dorsale02/Epine_dorsale03/Cou/Epaule_D/Bras_D/Avant-Bras_D/Main_D/Doigt_D03
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Epine_dorsale02/Epine_dorsale03/Cou/Epaule_D/Bras_D/Avant-Bras_D/Main_D/Doigt_D04
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Epine_dorsale02/Epine_dorsale03/Cou/Epaule_D/Bras_D/Avant-Bras_D/Main_D/Doigt_D05
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Epine_dorsale02/Epine_dorsale03/Cou/Epaule_D/Bras_D/Avant-Bras_D/Main_D/Doigt_D_Pouce
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Epine_dorsale02/Epine_dorsale03/Cou/Epaule_D/Bras_D/Avant-Bras_D/Main_D/Doigt_D_Pouce/Bip001
+          R Finger0Nub
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Epine_dorsale02/Epine_dorsale03/Cou/Epaule_G
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Epine_dorsale02/Epine_dorsale03/Cou/Epaule_G/Bras_G
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Epine_dorsale02/Epine_dorsale03/Cou/Epaule_G/Bras_G/Avant-Bras_G
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Epine_dorsale02/Epine_dorsale03/Cou/Epaule_G/Bras_G/Avant-Bras_G/Main_G
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Epine_dorsale02/Epine_dorsale03/Cou/Epaule_G/Bras_G/Avant-Bras_G/Main_G/Doigt_G02
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Epine_dorsale02/Epine_dorsale03/Cou/Epaule_G/Bras_G/Avant-Bras_G/Main_G/Doigt_G03
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Epine_dorsale02/Epine_dorsale03/Cou/Epaule_G/Bras_G/Avant-Bras_G/Main_G/Doigt_G04
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Epine_dorsale02/Epine_dorsale03/Cou/Epaule_G/Bras_G/Avant-Bras_G/Main_G/Doigt_G05
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Epine_dorsale02/Epine_dorsale03/Cou/Epaule_G/Bras_G/Avant-Bras_G/Main_G/Doigt_G_Pouce
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Epine_dorsale02/Epine_dorsale03/Cou/Epaule_G/Bras_G/Avant-Bras_G/Main_G/Doigt_G_Pouce/Bip001
+          L Finger0Nub
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Epine_dorsale02/Epine_dorsale03/Cou/Gras_Haut01
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Epine_dorsale02/Epine_dorsale03/Cou/Gras_Haut01/Gras_Bas01
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Epine_dorsale02/Epine_dorsale03/Cou/Gras_Haut01/Gras_Bas01/Gras_NUB01
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Epine_dorsale02/Epine_dorsale03/Cou/Gras_Haut02
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Epine_dorsale02/Epine_dorsale03/Cou/Gras_Haut02/Gras_Bas02
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Epine_dorsale02/Epine_dorsale03/Cou/Gras_Haut02/Gras_Bas02/Gras_NUB02
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Epine_dorsale02/Epine_dorsale03/Cou/Gras_Haut03
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Epine_dorsale02/Epine_dorsale03/Cou/Gras_Haut03/Gras_Bas03
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Epine_dorsale02/Epine_dorsale03/Cou/Gras_Haut03/Gras_Bas03/Gras_NUB03
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Epine_dorsale02/Epine_dorsale03/Cou/Gras_Haut04
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Epine_dorsale02/Epine_dorsale03/Cou/Gras_Haut04/Gras_Bas04
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Epine_dorsale02/Epine_dorsale03/Cou/Gras_Haut04/Gras_Bas04/Gras_NUB04
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Epine_dorsale02/Epine_dorsale03/Cou/Tete
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Epine_dorsale02/Epine_dorsale03/Cou/Tete/Bip001
+          HeadNub
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Epine_dorsale02/Epine_dorsale03/Cou/Tete/Bip001
+          Ponytail1
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Epine_dorsale02/Epine_dorsale03/Cou/Tete/Bip001
+          Ponytail1/Bip001 Ponytail11
+        weight: 1
+      - path: Bip001/Bassin/Epine_dorsale01/Epine_dorsale02/Epine_dorsale03/Cou/Tete/Bip001
+          Ponytail1/Bip001 Ponytail11/Bip001 Ponytail12
         weight: 1
       - path: Pompier
         weight: 1

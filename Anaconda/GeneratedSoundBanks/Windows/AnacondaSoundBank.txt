@@ -1,0 +1,136 @@
+Event	ID	Name			Wwise Object Path	Notes
+	77593050	NPC_Male_Spawn			\Default Work Unit\NPC_Male_Spawn	
+	287027837	NPC_Male_Jump			\Default Work Unit\NPC_Male_Jump	
+	334853465	Mega_Rush_Start			\Default Work Unit\Mega_Rush_Start	
+	483458994	PLayer_02_FS_Stop			\Default Work Unit\PLayer_02_FS_Stop	
+	487004186	Player_02_FS_Start			\Default Work Unit\Player_02_FS_Start	
+	597954154	Mega_Rush_End			\Default Work Unit\Mega_Rush_End	
+	759310649	Player_01_FS_Stop			\Default Work Unit\Player_01_FS_Stop	
+	782281652	Players_Fail			\Default Work Unit\Players_Fail	
+	878465777	NPC_Female_Spawn			\Default Work Unit\NPC_Female_Spawn	
+	1211834369	Music_UI_End			\Default Work Unit\Music_UI_End	
+	1739715032	Music_Ingame_End			\Default Work Unit\Music_Ingame_End	
+	1913560963	Music_Ingame_Start			\Default Work Unit\Music_Ingame_Start	
+	1916826459	Player_01_FS_Start			\Default Work Unit\Player_01_FS_Start	
+	2402349331	Body_Fall_Concrete			\Default Work Unit\Body_Fall_Concrete	
+	2942290752	Players_Headimpact			\Default Work Unit\Players_Headimpact	
+	3075040611	NPC_Old_Jump			\Default Work Unit\NPC_Old_Jump	
+	3358287209	Players_Success			\Default Work Unit\Players_Success	
+	3473276980	NPC_Old_Spawn			\Default Work Unit\NPC_Old_Spawn	
+	3704466344	NPC_Female_Jump			\Default Work Unit\NPC_Female_Jump	
+	3832435954	Music_UI_Start			\Default Work Unit\Music_UI_Start	
+
+Effect plug-ins	ID	Name	Type				Notes
+	488358449	Room_Large (Custom)	Wwise RoomVerb			
+	1159390747	Room_Medium_Tiled	Wwise RoomVerb			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	3148179	Player_Fail_019_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Player_Fail_019.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players_Fail\Player_Fail_019_flac		251884
+	8880284	Men_Scream_016_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Men_Scream_016.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Male\NPC_Male_Jump\Men_Scream_016_flac		306024
+	15398766	Player Sucess_002_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Player Sucess_002.flac_6080F386.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players_Success\Player Sucess_002_flac		80874
+	28758130	Men_Help_Me_007_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Men_Help_Me_007.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Old\NPC_Old_Spawn\Men_Help_Me_007_flac		306638
+	29319560	Men_Scream_001_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Men_Scream_001.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Old\NPC_Old_Jump\Men_Scream_001_flac		314750
+	33960303	Victim_fille_007_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Victim_fille_007.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Female\NPC_Female_Spawn\Victim_fille_007_flac		253556
+	34858835	Men_Scream_015_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Men_Scream_015.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Male\NPC_Male_Jump\Men_Scream_015_flac		305592
+	36947793	Women_Help_Me_005_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Women_Help_Me_005.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Female\NPC_Female_Spawn\Women_Help_Me_005_flac		281916
+	58089477	Women_Scream_008_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Women_Scream_008.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Female\NPC_Female_Jump\Women_Scream_008_flac		402252
+	60418176	Men_Scream_003_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Men_Scream_003.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Old\NPC_Old_Jump\Men_Scream_003_flac		287136
+	61598731	Player_Fail_007_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Player_Fail_007.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players_Fail\Player_Fail_007_flac		222844
+	73529042	Men_Scream_008_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Men_Scream_008.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Male\NPC_Male_Jump\Men_Scream_008_flac		306422
+	74871214	Footstep_Walking_Concrete_03	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Footstep_Walking_Concrete_03_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_02\Player_02_FS\Footstep_Walking_Concrete_03		24814
+	105376925	Player_Fail_027_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Player_Fail_027.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players_Fail\Player_Fail_027_flac		235520
+	107699412	Women_Help_Me_003_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Women_Help_Me_003.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Female\NPC_Female_Spawn\Women_Help_Me_003_flac		283532
+	119110116	Women_Help_Me_008_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Women_Help_Me_008.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Female\NPC_Female_Spawn\Women_Help_Me_008_flac		333916
+	127315225	Player_Fail_028_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Player_Fail_028.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players_Fail\Player_Fail_028_flac		232172
+	136161608	Player Sucess_004_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Player Sucess_004.flac_15C812D5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players_Success\Player Sucess_004_flac		64320
+	154410639	Men_Scream_011_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Men_Scream_011.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Male\NPC_Male_Jump\Men_Scream_011_flac		302578
+	158326475	Body_Fall_Concrete_06	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Body_Fall_Concrete_06_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Body_Fall_Concrete\Body_Fall_Concrete_06		64226
+	160251228	Player_Fail_005_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Player_Fail_005.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players_Fail\Player_Fail_005_flac		223124
+	160591223	Ringer	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Ringer_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mega_Rush\Ringer\Ringer		114684
+	165448394	Player2_Fail_016_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Player2_Fail_016.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players_Fail\Player2_Fail_016_flac		271070
+	169067571	Player_Fail_031_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Player_Fail_031.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players_Fail\Player_Fail_031_flac		279178
+	176970229	Fire_Loop_03	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Fire_Loop_03_3D767F59.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Fire_Loop_03		5112738
+	182812797	Player Sucess_003_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Player Sucess_003.flac_B8E600A2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players_Success\Player Sucess_003_flac		67370
+	202117477	Men_Help_Me_017_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Men_Help_Me_017.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Male\NPC_Male_Spawn\Men_Help_Me_017_flac		288164
+	213135060	Men_Help_Me_006_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Men_Help_Me_006.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Old\NPC_Old_Spawn\Men_Help_Me_006_flac		278864
+	218992925	Victim_fille_004_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Victim_fille_004.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Female\NPC_Female_Spawn\Victim_fille_004_flac		259868
+	239399216	Victim_fille_003_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Victim_fille_003.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Female\NPC_Female_Spawn\Victim_fille_003_flac		506520
+	245772895	Player_Fail_029_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Player_Fail_029.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players_Fail\Player_Fail_029_flac		240890
+	250794936	Blank	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Blank_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Female\NPC_Female_Spawn\Blank		88264
+	252747512	Fire_Loop_02-001	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Fire_Loop_02-001_CAB24179.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Fire_Loop_02-001		5087900
+	253039287	Player2_Sucess_001_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Player2_Sucess_001.flac_A720C39D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players_Success\Player2_Sucess_001_flac		57240
+	254033561	Player_Fail_009_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Player_Fail_009.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players_Fail\Player_Fail_009_flac		222064
+	257733994	Player2_Fail_008_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Player2_Fail_008.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players_Fail\Player2_Fail_008_flac		252172
+	260859223	Men_Help_Me_008_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Men_Help_Me_008.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Old\NPC_Old_Spawn\Men_Help_Me_008_flac		391174
+	268854782	Player_Fail_021_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Player_Fail_021.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players_Fail\Player_Fail_021_flac		228238
+	272798103	Player2_Sucess_006_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Player2_Sucess_006.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players_Success\Player2_Sucess_006_flac		219264
+	274822903	Men_Help_Me_019_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Men_Help_Me_019.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Male\NPC_Male_Spawn\Men_Help_Me_019_flac		334562
+	288124795	Player2_Fail_013_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Player2_Fail_013.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players_Fail\Player2_Fail_013_flac		132364
+	294576707	Player2_Sucess_007_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Player2_Sucess_007.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players_Success\Player2_Sucess_007_flac		257366
+	311237814	Player_Fail_011_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Player_Fail_011.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players_Fail\Player_Fail_011_flac		237462
+	315446856	Firetruck_Siren-001	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Firetruck_Siren-001_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mega_Rush\Firetruck_Siren-001		1127522
+	315917856	Men_Help_Me_013_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Men_Help_Me_013.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Male\NPC_Male_Spawn\Men_Help_Me_013_flac		266384
+	325424669	Player2_Fail_001_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Player2_Fail_001.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players_Fail\Player2_Fail_001_flac		256770
+	330711516	Women_Scream_001_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Women_Scream_001.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Female\NPC_Female_Jump\Women_Scream_001_flac		539054
+	339962021	Body_Fall_Concrete_8	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Body_Fall_Concrete_8_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Body_Fall_Concrete\Body_Fall_Concrete_8		45926
+	358061495	Victim_fille_010_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Victim_fille_010.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Female\NPC_Female_Jump\Victim_fille_010_flac		607970
+	358837182	Player_Fail_016_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Player_Fail_016.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players_Fail\Player_Fail_016_flac		248160
+	389888252	Men_Scream_010_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Men_Scream_010.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Male\NPC_Male_Jump\Men_Scream_010_flac		300460
+	401330839	Body_Fall_Concrete_5	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Body_Fall_Concrete_5_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Body_Fall_Concrete\Body_Fall_Concrete_5		45428
+	410231650	Body_Fall_Concrete_10	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Body_Fall_Concrete_10_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Body_Fall_Concrete\Body_Fall_Concrete_10		49648
+	411121081	Victim_fille_008_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Victim_fille_008.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Female\NPC_Female_Spawn\Victim_fille_008_flac		329064
+	411167910	Player_Fail_022_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Player_Fail_022.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players_Fail\Player_Fail_022_flac		225216
+	419863848	Body_Fall_Concrete_9	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Body_Fall_Concrete_9_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Body_Fall_Concrete\Body_Fall_Concrete_9		47878
+	432334833	Boy_Please_Help_2	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Boy_Please_Help_2_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Male\NPC_Male_Spawn\Boy_Please_Help_2		44164
+	466630454	Net_Sucess	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Net_Sucess_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Net_Success\Net_Sucess		256054
+	467147693	Men_Scream_014_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Men_Scream_014.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Male\NPC_Male_Jump\Men_Scream_014_flac		312330
+	492121164	Victim_fille_012_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Victim_fille_012.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Female\NPC_Female_Jump\Victim_fille_012_flac		481864
+	511061528	samba	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\samba_AA7F8326.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\samba		4233664
+	518197322	Body_Fall_Concrete_2	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Body_Fall_Concrete_2_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Body_Fall_Concrete\Body_Fall_Concrete_2		82920
+	538161761	Player2_Fail_003_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Player2_Fail_003.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players_Fail\Player2_Fail_003_flac		310608
+	562938930	Player2_Sucess_003_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Player2_Sucess_003.flac_9BF21AC4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players_Success\Player2_Sucess_003_flac		94634
+	564105313	Victim_fille_009_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Victim_fille_009.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Female\NPC_Female_Jump\Victim_fille_009_flac		792834
+	566589305	Head_Impact	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Head_Impact_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players_Headimpact\Head_Impact		341030
+	571408657	Player Sucess_001_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Player Sucess_001.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players_Success\Player Sucess_001_flac		226408
+	572126326	Player_Fail_008_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Player_Fail_008.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players_Fail\Player_Fail_008_flac		222738
+	584325621	Men_Scream_009_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Men_Scream_009.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Male\NPC_Male_Jump\Men_Scream_009_flac		319278
+	594435669	Footstep_Walking_Concrete_02	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Footstep_Walking_Concrete_02_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_02\Player_02_FS\Footstep_Walking_Concrete_02		35164
+	614211142	Men_Scream_005_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Men_Scream_005.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Male\NPC_Male_Jump\Men_Scream_005_flac		330594
+	642175150	Men_Help_Me_005_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Men_Help_Me_005.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Old\NPC_Old_Spawn\Men_Help_Me_005_flac		283896
+	657314082	Men_Scream_012_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Men_Scream_012.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Male\NPC_Male_Jump\Men_Scream_012_flac		292904
+	674482115	Player_Fail_013_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Player_Fail_013.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players_Fail\Player_Fail_013_flac		269708
+	692629819	Men_Scream_013_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Men_Scream_013.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Male\NPC_Male_Jump\Men_Scream_013_flac		319892
+	707315493	Footstep_Walking_Concrete_01	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Footstep_Walking_Concrete_01_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_02\Player_02_FS\Footstep_Walking_Concrete_01		29734
+	712350994	Boy_Please_Help	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Boy_Please_Help_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Male\NPC_Male_Spawn\Boy_Please_Help		44164
+	720989896	Men_Help_Me_010_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Men_Help_Me_010.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Old\NPC_Old_Spawn\Men_Help_Me_010_flac		312384
+	744677272	Player Sucess_009_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Player Sucess_009.flac_13AF7B44.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players_Success\Player Sucess_009_flac		56946
+	807061991	Player Sucess_012_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Player Sucess_012.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players_Success\Player Sucess_012_flac		240748
+	813510949	Net_Break-002	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Net_Break-002_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Net_Break\Net_Break-002		234488
+	817401950	Victim_fille_006_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Victim_fille_006.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Female\NPC_Female_Spawn\Victim_fille_006_flac		298124
+	826109218	Player2_Sucess_004_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Player2_Sucess_004.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players_Success\Player2_Sucess_004_flac		221282
+	832139337	samba_intro	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\samba_intro_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\samba_intro		1411264
+	832390708	Player_Fail_020_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Player_Fail_020.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players_Fail\Player_Fail_020_flac		229822
+	841302779	Victim_fille_005_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Victim_fille_005.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Female\NPC_Female_Spawn\Victim_fille_005_flac		264828
+	849755669	Net_Break-001	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Net_Break-001_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Net_Break\Net_Break-001		230478
+	856530313	Player_Fail_001_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Player_Fail_001.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players_Fail\Player_Fail_001_flac		233506
+	857452084	Victim_fille_001_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Victim_fille_001.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Female\NPC_Female_Spawn\Victim_fille_001_flac		305540
+	875651850	Net_Break-003	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Net_Break-003_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Net_Break\Net_Break-003		239892
+	899577048	Men_Scream_006_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Men_Scream_006.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Male\NPC_Male_Jump\Men_Scream_006_flac		352908
+	902834191	Heat_Wave_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Heat_Wave.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mega_Rush\Mega_rush\Heat_Wave_flac		317762
+	916641592	Footstep_Walking_Concrete_06	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Footstep_Walking_Concrete_06_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_02\Player_02_FS\Footstep_Walking_Concrete_06		38712
+	919918465	Mega_Rush_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Mega_Rush.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mega_Rush\Mega_rush\Mega_Rush_flac		338184
+	958600708	Player Sucess_007_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Player Sucess_007.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players_Success\Player Sucess_007_flac		222540
+	964499829	Footstep_Walking_Concrete_04	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Footstep_Walking_Concrete_04_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_02\Player_02_FS\Footstep_Walking_Concrete_04		27402
+	987684530	Player2_Fail_005_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Player2_Fail_005.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players_Fail\Player2_Fail_005_flac		341446
+	997132956	Player2_Fail_002_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Player2_Fail_002.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players_Fail\Player2_Fail_002_flac		287820
+	1010320946	Body_Fall_Concrete_7	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Body_Fall_Concrete_7_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Body_Fall_Concrete\Body_Fall_Concrete_7		44152
+	1018816703	Men_Scream_004_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Men_Scream_004.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Old\NPC_Old_Jump\Men_Scream_004_flac		297444
+	1029037610	Player2_Sucess_005_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Player2_Sucess_005.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players_Success\Player2_Sucess_005_flac		219022
+	1041783670	Body_Fall_Concrete_04	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Body_Fall_Concrete_04_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Body_Fall_Concrete\Body_Fall_Concrete_04		74814
+	1049640488	Men_Scream_007_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Men_Scream_007.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Male\NPC_Male_Jump\Men_Scream_007_flac		330942
+	1059845682	Victim_fille_011_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Victim_fille_011.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Female\NPC_Female_Jump\Victim_fille_011_flac		592326
+	1065350338	Body_Fall_Concrete_1	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Body_Fall_Concrete_1_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Body_Fall_Concrete\Body_Fall_Concrete_1		27876
+	1070147475	Player2_Fail_007_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Player2_Fail_007.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players_Fail\Player2_Fail_007_flac		259646
+	1072723722	Men_Help_Me_011_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Men_Help_Me_011.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Old\NPC_Old_Spawn\Men_Help_Me_011_flac		313906
+	1072943858	Men_Scream_002_flac	C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\SFX\Men_Scream_002.flac_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Old\NPC_Old_Jump\Men_Scream_002_flac		290510
+

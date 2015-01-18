@@ -25,12 +25,15 @@ public class FallingObject : MonoBehaviour
 				Physics2D.IgnoreLayerCollision (11, 11, true);
 				Physics.IgnoreLayerCollision (11, 11, true);
 
+				AudioSource test = GetComponent<AudioSource> ();
+		test.Play ();
+
 		}
 	
 		// Update is called once per frame
 		void Update ()
 		{
-				if ((Time.time - InitTime) > TimeToJump && (Time.time - InitTime) < TimeToFall+1) 
+				if ((Time.time - InitTime) > TimeToJump && (Time.time - InitTime) < TimeToFall + 0.8) 
 				{
 					this.transform.position += new Vector3 (0, 0.02f, -0.04f); 	
 					//this.transform.rotation +=

@@ -1,0 +1,52 @@
+﻿Ajout dans la scène principale, jeu de lumière et effets
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	modified:   Projet/Assets/Materials/PompierMat.mat
+#	modified:   Projet/Assets/Models/Immeuble/Materials/Interieur.mat
+#	modified:   Projet/Assets/Models/Personnage_pompier/Animation/Anim-pompier-marche.FBX
+#	modified:   Projet/Assets/Models/Personnage_pompier/Animation/Anim-pompier-marche.FBX.meta
+#	modified:   Projet/Assets/Models/Personnage_pompier/Animation/Pompier_Behaviour.controller
+#	new file:   Projet/Assets/Models/Skydome.meta
+#	new file:   Projet/Assets/Models/Skydome/Materials.meta
+#	new file:   Projet/Assets/Models/Skydome/Materials/No Name.mat
+#	new file:   Projet/Assets/Models/Skydome/Materials/No Name.mat.meta
+#	new file:   Projet/Assets/Models/Skydome/Skydome.FBX
+#	new file:   Projet/Assets/Models/Skydome/Skydome.FBX.meta
+#	new file:   Projet/Assets/Models/Skydome/Skydome_Swooop.mat
+#	new file:   Projet/Assets/Models/Skydome/Skydome_Swooop.mat.meta
+#	new file:   Projet/Assets/Models/Sol.meta
+#	new file:   Projet/Assets/Models/Sol/Materials.meta
+#	new file:   Projet/Assets/Models/Sol/Materials/No Name.mat
+#	new file:   Projet/Assets/Models/Sol/Materials/No Name.mat.meta
+#	new file:   Projet/Assets/Models/Sol/Rue.FBX
+#	new file:   Projet/Assets/Models/Sol/Rue.FBX.meta
+#	modified:   Projet/Assets/Scenes/Scene.unity
+#	modified:   Projet/Assets/Shaders/PompierShader.shader
+#	modified:   Projet/Assets/Textures/Bricks_Bleu_D.tga
+#	modified:   Projet/Library/CurrentLayout.dwlt
+#	modified:   Projet/Library/assetDatabase3
+#	modified:   Projet/Library/expandedItems
+#	modified:   Projet/Library/guidmapper
+#	new file:   Projet/Library/metadata/20/20a3ddb54dab3c646ba91cf471c145f4
+#	new file:   Projet/Library/metadata/2a/2a623f986b78404438e9ba421b9de513
+#	modified:   Projet/Library/metadata/3a/3a4f3b49c1da3804e9a4f9dd4d03ece8
+#	new file:   Projet/Library/metadata/3a/3a7b6aba57aeffb419012f80843da4eb
+#	modified:   Projet/Library/metadata/3d/3de71f0ae38fb1542a9f2037a7af8b8f
+#	new file:   Projet/Library/metadata/4c/4cf00d96fed2b02458f416306c5752dc
+#	new file:   Projet/Library/metadata/54/54447895dd10e8b4c9c9d2affaeda75a
+#	modified:   Projet/Library/metadata/5b/5b8a5c9a4517cd648b8a6e7062815db8
+#	new file:   Projet/Library/metadata/a2/a2aac066fcf09e948a55327c22e23610
+#	new file:   Projet/Library/metadata/a6/a640619309104264ca24a8475de00d7a
+#	new file:   Projet/Library/metadata/bb/bb5849d247e13e4439f6e7c1c886882c
+#	modified:   Projet/Library/metadata/be/be007374fc60e814c8094c0876ab7048
+#	modified:   Projet/Library/metadata/cb/cb4b118771b5d534888c789e2dbb8703
+#	new file:   Projet/Library/metadata/d2/d29952068335c4149af454aaf086f39b
+#	modified:   Projet/Projet-csharp.sln
+#	modified:   Projet/Projet.sln
+#	modified:   Projet/Projet.userprefs
+#
+

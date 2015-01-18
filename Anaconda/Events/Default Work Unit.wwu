@@ -12,6 +12,27 @@
 								</Element>
 							</ElementList>
 						</Action>
+						<Action Name="Stop" ID="{85D91E8A-7608-4A4F-A283-1E4E74B71BF9}" ShortID="328570222" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{6EF049F7-24B6-4208-8203-79F5B46833A7}" Global="false">
+									<ObjectRef Name="NPC_Female_Jump" ID="{D27B1D2F-AF04-4D8C-8F94-7646EC0D55C9}" WorkUnitID="{2AEE07AE-2F21-4BCF-A0A2-89CF5F3358FD}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Stop" ID="{24FAB640-8A37-4373-BB90-835AC9D6C2F8}" ShortID="172167118" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{85995102-B4C0-4920-B5C6-9002376382A5}" Global="false">
+									<ObjectRef Name="NPC_Old_Jump" ID="{25A6A60A-AA9A-4119-B131-9AEED920EEA1}" WorkUnitID="{2AEE07AE-2F21-4BCF-A0A2-89CF5F3358FD}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Stop" ID="{066228BA-C898-48EF-96FF-C18A5D328079}" ShortID="502559396" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{B1A14395-F3E2-47E5-8297-050130EDBED5}" Global="false">
+									<ObjectRef Name="NPC_Male_Jump" ID="{C5BB2703-938A-4359-BE6E-970CE7F54885}" WorkUnitID="{2AEE07AE-2F21-4BCF-A0A2-89CF5F3358FD}"/>
+								</Element>
+							</ElementList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Mega_Rush_Start" ID="{3BA17D27-B44E-4B68-BDA9-85C1EDF36AA9}">
@@ -36,24 +57,187 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Music_Ingame_Start" ID="{CE056DD8-633B-411A-8D0F-38262286FD7A}"/>
-				<Event Name="Music_Ingame_End" ID="{196EB73B-0DAB-4D8D-B4DE-B9D08B2941CF}"/>
+				<Event Name="Music_Ingame_Start" ID="{CE056DD8-633B-411A-8D0F-38262286FD7A}">
+					<ChildrenList>
+						<Action Name="Play" ID="{315DA558-7FEC-46D9-B774-E9EB32C7F6AD}" ShortID="400301883" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{C1E892E8-C75C-4D80-902C-1C1D7504DFC4}" Global="false">
+									<ObjectRef Name="Music" ID="{DF7F2982-FA16-489A-91CD-CC5062345295}" WorkUnitID="{2AEE07AE-2F21-4BCF-A0A2-89CF5F3358FD}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Music_Ingame_End" ID="{196EB73B-0DAB-4D8D-B4DE-B9D08B2941CF}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{8EE9B45F-B8B4-489C-B2F1-C43722477B9F}" ShortID="325582466" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{1837510B-C258-4B84-94F3-2C57A8CE37E1}" Global="false">
+									<ObjectRef Name="Music" ID="{DF7F2982-FA16-489A-91CD-CC5062345295}" WorkUnitID="{2AEE07AE-2F21-4BCF-A0A2-89CF5F3358FD}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 				<Event Name="Music_UI_Start" ID="{D2D855C9-07B4-4262-B751-9186BEA054DB}"/>
 				<Event Name="Music_UI_End" ID="{2B23034F-16B8-4A05-84E3-44445CF997B6}"/>
-				<Event Name="NPC_Male_Jump" ID="{B38354EF-D7A0-4C81-8588-51DE99AD97A5}"/>
-				<Event Name="NPC_Female_Jump" ID="{FE5636EB-40B7-4C9C-9581-D89D7A4984E1}"/>
-				<Event Name="NPC_Old_Jump" ID="{318F75AB-6775-45A1-898E-869557378CFA}"/>
-				<Event Name="NPC_Female_Spawn" ID="{6681D70D-72A0-49BF-BA1F-5A070A3DAB5F}"/>
-				<Event Name="NPC_Male_Spawn" ID="{A64B01CE-475B-4F8B-B775-E3F0F0B9EE54}"/>
-				<Event Name="NPC_Old_Spawn" ID="{B42A24C7-92F3-4D40-9ADB-4771AC5CA40A}"/>
-				<Event Name="Player_01_Success" ID="{E98A64D8-9201-46FC-A952-15E7ACEDA618}"/>
-				<Event Name="Player_01_Fail" ID="{75466CF6-1429-4579-9E99-8E3232459E72}"/>
-				<Event Name="Player_02_Fail" ID="{B57F7ABE-135C-4325-9826-27E7D93322A3}"/>
-				<Event Name="Player_01_Headrush" ID="{1181952B-C497-4DE3-8FCF-E754A49C6A7B}"/>
-				<Event Name="Player_02_Success" ID="{F97DC0AD-E2C8-431F-A791-8C34C086CFEF}"/>
-				<Event Name="Player_02_Headrush" ID="{4EA59BDC-D78C-45B8-9599-DE975D21AA60}"/>
-				<Event Name="Player_01_FS" ID="{CF906DEC-E711-41DB-BC44-2DD27CF5BF36}"/>
-				<Event Name="Player_02_FS" ID="{CF21C90D-D40C-48CA-8BDF-59F493C9DB5F}"/>
+				<Event Name="NPC_Male_Jump" ID="{B38354EF-D7A0-4C81-8588-51DE99AD97A5}">
+					<ChildrenList>
+						<Action Name="Play" ID="{A044C7E2-687D-45DA-9287-4F0E1B78242A}" ShortID="587393637" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{24667BA7-7E94-49A4-99D3-A2A1A9CAFD55}" Global="false">
+									<ObjectRef Name="NPC_Male_Jump" ID="{C5BB2703-938A-4359-BE6E-970CE7F54885}" WorkUnitID="{2AEE07AE-2F21-4BCF-A0A2-89CF5F3358FD}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="NPC_Female_Jump" ID="{FE5636EB-40B7-4C9C-9581-D89D7A4984E1}">
+					<ChildrenList>
+						<Action Name="Play" ID="{0EA42D2C-2D1A-469C-BBCC-CEF95D3FCFCE}" ShortID="654164482" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{4F3CF213-0DA8-4535-9C04-D0D2791AE22E}" Global="false">
+									<ObjectRef Name="NPC_Female_Jump" ID="{D27B1D2F-AF04-4D8C-8F94-7646EC0D55C9}" WorkUnitID="{2AEE07AE-2F21-4BCF-A0A2-89CF5F3358FD}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="NPC_Old_Jump" ID="{318F75AB-6775-45A1-898E-869557378CFA}">
+					<ChildrenList>
+						<Action Name="Play" ID="{619C7831-EDE4-4186-ADAE-194395D8209C}" ShortID="833330456" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{1CB76245-39B4-461C-8C76-9CE6A0F21152}" Global="false">
+									<ObjectRef Name="NPC_Old_Jump" ID="{25A6A60A-AA9A-4119-B131-9AEED920EEA1}" WorkUnitID="{2AEE07AE-2F21-4BCF-A0A2-89CF5F3358FD}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="NPC_Female_Spawn" ID="{6681D70D-72A0-49BF-BA1F-5A070A3DAB5F}">
+					<ChildrenList>
+						<Action Name="Play" ID="{84523351-92FA-4FE9-AEEA-021A984D3D2D}" ShortID="880514239" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{11E05217-E844-4260-83C2-0E15E0BD089A}" Global="false">
+									<ObjectRef Name="NPC_Female_Spawn" ID="{62296008-2A80-4966-923C-3354E8F9EC51}" WorkUnitID="{2AEE07AE-2F21-4BCF-A0A2-89CF5F3358FD}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="NPC_Male_Spawn" ID="{A64B01CE-475B-4F8B-B775-E3F0F0B9EE54}">
+					<ChildrenList>
+						<Action Name="Play" ID="{782CCDD6-0331-4997-930A-F8327D1B2836}" ShortID="428257706" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{E3EDC42A-A8E9-4F94-B489-49FCA11D42F2}" Global="false">
+									<ObjectRef Name="NPC_Male_Spawn" ID="{0B367F9E-8E16-4585-8426-FAA61E65FCFC}" WorkUnitID="{2AEE07AE-2F21-4BCF-A0A2-89CF5F3358FD}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="NPC_Old_Spawn" ID="{B42A24C7-92F3-4D40-9ADB-4771AC5CA40A}">
+					<ChildrenList>
+						<Action Name="Play" ID="{DCC1B093-2A60-4EC7-99C8-45E23BC39908}" ShortID="64636297" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{463706EB-A6F2-4BDA-863B-B5041FF13157}" Global="false">
+									<ObjectRef Name="NPC_Old_Spawn" ID="{8671F87F-7CCA-4A6E-B2C8-18CEA1FEB136}" WorkUnitID="{2AEE07AE-2F21-4BCF-A0A2-89CF5F3358FD}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Players_Success" ID="{E98A64D8-9201-46FC-A952-15E7ACEDA618}">
+					<ChildrenList>
+						<Action Name="Play" ID="{A0543F87-8671-4E6D-968B-4887E46DE4DD}" ShortID="217356699" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{10191F34-0C53-4681-A6F0-7254574357E0}" Global="false">
+									<ObjectRef Name="Players_Success" ID="{CA73C56F-D7F3-41B0-99D7-A083B0ED2908}" WorkUnitID="{2AEE07AE-2F21-4BCF-A0A2-89CF5F3358FD}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{1B0BBCA0-A639-4529-A14A-BEA0F324AA57}" ShortID="564626339" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{367E3E75-23E0-4C04-8988-8B64499A8CB5}" Global="false">
+									<ObjectRef Name="Net_Success" ID="{26DE46A8-0BEC-4E23-93A8-EEC24EB8369B}" WorkUnitID="{2AEE07AE-2F21-4BCF-A0A2-89CF5F3358FD}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Players_Fail" ID="{B57F7ABE-135C-4325-9826-27E7D93322A3}">
+					<ChildrenList>
+						<Action Name="Play" ID="{CB398877-0E40-4ACA-95D5-AFE6386A707C}" ShortID="657072578" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{4D06B865-F725-4AF6-A9F3-61CB90154050}" Global="false">
+									<ObjectRef Name="Players_Fail" ID="{EEA48C2E-26B1-4577-B40A-57DE88A955B1}" WorkUnitID="{2AEE07AE-2F21-4BCF-A0A2-89CF5F3358FD}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{65F5EBD5-2B42-42A9-9754-16B1990809B1}" ShortID="719576360" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{E7A9BB35-F73D-4686-AF0B-470F88D37C4D}" Global="false">
+									<ObjectRef Name="Net_Break" ID="{7BD9FA7D-8158-4D6D-8973-F8BD968AD929}" WorkUnitID="{2AEE07AE-2F21-4BCF-A0A2-89CF5F3358FD}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Players_Headimpact" ID="{1181952B-C497-4DE3-8FCF-E754A49C6A7B}">
+					<ChildrenList>
+						<Action Name="Play" ID="{C4D4B775-CD5E-4091-93D5-FFF44A4BAB7E}" ShortID="361313891" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{00ADAE2D-9124-44C3-AF16-DF746FFA0EA3}" Global="false">
+									<ObjectRef Name="Players_Headimpact" ID="{1004B15D-AC7A-40B2-8A24-81993239F5FC}" WorkUnitID="{2AEE07AE-2F21-4BCF-A0A2-89CF5F3358FD}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Player_01_FS_Start" ID="{CF906DEC-E711-41DB-BC44-2DD27CF5BF36}">
+					<ChildrenList>
+						<Action Name="Play" ID="{ECB45E0E-DEFD-46C4-BD0E-078CBC1AEEB5}" ShortID="540017090" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{4E3F64CE-B380-45C2-9EB5-BDCBF7A78283}" Global="false">
+									<ObjectRef Name="Player_01_FS" ID="{4AD34821-2ED8-4517-BF02-C11AE68896AA}" WorkUnitID="{2AEE07AE-2F21-4BCF-A0A2-89CF5F3358FD}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Player_02_FS_Start" ID="{CF21C90D-D40C-48CA-8BDF-59F493C9DB5F}">
+					<ChildrenList>
+						<Action Name="Play" ID="{84E8709F-408F-4131-A82B-EAC9BE3AF8EC}" ShortID="574800258" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{4FE31872-0C99-4AC2-AE8D-6C35D050E030}" Global="false">
+									<ObjectRef Name="Player_02_FS" ID="{ABB420CB-318F-4C33-845A-0508462293B3}" WorkUnitID="{2AEE07AE-2F21-4BCF-A0A2-89CF5F3358FD}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Player_01_FS_Stop" ID="{B69CAE1C-F54F-4A3E-B4F4-A80EA37FB0F8}">
+					<ChildrenList>
+						<Action Name="Break" ID="{DCB72DD1-215E-4B09-8FB2-EBAE6904177B}" ShortID="830907818" Type="Break" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{47FA0DE6-F02E-4CA0-B057-08973280073D}" Global="false">
+									<ObjectRef Name="Player_01_FS" ID="{4AD34821-2ED8-4517-BF02-C11AE68896AA}" WorkUnitID="{2AEE07AE-2F21-4BCF-A0A2-89CF5F3358FD}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PLayer_02_FS_Stop" ID="{85B39396-4BE5-405D-88C7-6BF2E5505AAD}">
+					<ChildrenList>
+						<Action Name="Break" ID="{B600A4E7-F98D-418F-85A8-E300777107E0}" ShortID="287166886" Type="Break" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{793C5426-B23A-46B2-95B1-4A95A57A1CD0}" Global="false">
+									<ObjectRef Name="Player_02_FS" ID="{ABB420CB-318F-4C33-845A-0508462293B3}" WorkUnitID="{2AEE07AE-2F21-4BCF-A0A2-89CF5F3358FD}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

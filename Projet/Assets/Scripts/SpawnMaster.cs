@@ -88,11 +88,13 @@ public class SpawnMaster : MonoBehaviour
 
 
 				if ((Time.time - InitialTime) > TopRowNextSpawn) {
+
 						float RandomNumber = Random.Range (0f, RowSizeF);
 						int Pos = (int)Mathf.Floor (RandomNumber);
 						TopRowSpawners [Pos].Spawn ();
 						TopRowNextSpawn += TopRowSpawnRate;
 						Debug.Log ("Top Row" + Time.time);
+
 						//TopRowNextSpawn += ((Random.Range(0, RandomizerRange)) + CurrentTopRowSpawnRate);
 
 
@@ -174,8 +176,8 @@ public class SpawnMaster : MonoBehaviour
 
 		public void IncreaseWave ()
 		{
-				CurrentWaveNumber = 10;
-				//CurrentWaveNumber++;
+				//CurrentWaveNumber = 1;
+				CurrentWaveNumber++;
 				Debug.Log ("WAVE # " + CurrentWaveNumber);
 				Interface.Level = CurrentWaveNumber;
 				
@@ -186,6 +188,7 @@ public class SpawnMaster : MonoBehaviour
 						break;
 				case 2:
 						TopRowSpawnRate = 7;
+						TopRowNextSpawn = 26;
 						break;
 				case 3:
 						TopRowSpawnRate = 14;

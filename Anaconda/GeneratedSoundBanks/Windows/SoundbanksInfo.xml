@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" SchemaVersion="10" SoundbankVersion="112">
+	<RootPaths>
+		<ProjectRoot>C:\Users\jérémi\Documents\Anaconda\Anaconda\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\jérémi\Documents\Anaconda\Anaconda\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\jérémi\Documents\Anaconda\Anaconda\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\jérémi\Documents\Anaconda\Anaconda\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3755014557" Language="SFX">
+			<ShortName>AnacondaSoundBank</ShortName>
+			<Path>AnacondaSoundBank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2402349331" Name="Body_Fall_Concrete"/>
+				<Event Id="597954154" Name="Mega_Rush_End"/>
+				<Event Id="334853465" Name="Mega_Rush_Start"/>
+				<Event Id="1739715032" Name="Music_Ingame_End"/>
+				<Event Id="1913560963" Name="Music_Ingame_Start"/>
+				<Event Id="1211834369" Name="Music_UI_End"/>
+				<Event Id="3832435954" Name="Music_UI_Start"/>
+				<Event Id="3704466344" Name="NPC_Female_Jump"/>
+				<Event Id="878465777" Name="NPC_Female_Spawn"/>
+				<Event Id="287027837" Name="NPC_Male_Jump"/>
+				<Event Id="77593050" Name="NPC_Male_Spawn"/>
+				<Event Id="3075040611" Name="NPC_Old_Jump"/>
+				<Event Id="3473276980" Name="NPC_Old_Spawn"/>
+				<Event Id="1916826459" Name="Player_01_FS_Start"/>
+				<Event Id="759310649" Name="Player_01_FS_Stop"/>
+				<Event Id="487004186" Name="Player_02_FS_Start"/>
+				<Event Id="483458994" Name="PLayer_02_FS_Stop"/>
+				<Event Id="782281652" Name="Players_Fail"/>
+				<Event Id="2942290752" Name="Players_Headimpact"/>
+				<Event Id="3358287209" Name="Players_Success"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="3148179" Language="SFX">
+					<ShortName>Player_Fail_019.flac.wav</ShortName>
+					<Path>SFX\Player_Fail_019.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="8880284" Language="SFX">
+					<ShortName>Men_Scream_016.flac.wav</ShortName>
+					<Path>SFX\Men_Scream_016.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="15398766" Language="SFX">
+					<ShortName>Player Sucess_002.flac.wav</ShortName>
+					<Path>SFX\Player Sucess_002.flac_6080F386.wem</Path>
+				</File>
+				<File Id="28758130" Language="SFX">
+					<ShortName>Men_Help_Me_007.flac.wav</ShortName>
+					<Path>SFX\Men_Help_Me_007.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="29319560" Language="SFX">
+					<ShortName>Men_Scream_001.flac.wav</ShortName>
+					<Path>SFX\Men_Scream_001.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="33960303" Language="SFX">
+					<ShortName>Victim_fille_007.flac.wav</ShortName>
+					<Path>SFX\Victim_fille_007.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="34858835" Language="SFX">
+					<ShortName>Men_Scream_015.flac.wav</ShortName>
+					<Path>SFX\Men_Scream_015.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="36947793" Language="SFX">
+					<ShortName>Women_Help_Me_005.flac.wav</ShortName>
+					<Path>SFX\Women_Help_Me_005.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="58089477" Language="SFX">
+					<ShortName>Women_Scream_008.flac.wav</ShortName>
+					<Path>SFX\Women_Scream_008.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="60418176" Language="SFX">
+					<ShortName>Men_Scream_003.flac.wav</ShortName>
+					<Path>SFX\Men_Scream_003.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="61598731" Language="SFX">
+					<ShortName>Player_Fail_007.flac.wav</ShortName>
+					<Path>SFX\Player_Fail_007.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="73529042" Language="SFX">
+					<ShortName>Men_Scream_008.flac.wav</ShortName>
+					<Path>SFX\Men_Scream_008.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="74871214" Language="SFX">
+					<ShortName>Footstep_Walking_Concrete_03.wav</ShortName>
+					<Path>SFX\Footstep_Walking_Concrete_03_DDC98EF4.wem</Path>
+				</File>
+				<File Id="105376925" Language="SFX">
+					<ShortName>Player_Fail_027.flac.wav</ShortName>
+					<Path>SFX\Player_Fail_027.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="107699412" Language="SFX">
+					<ShortName>Women_Help_Me_003.flac.wav</ShortName>
+					<Path>SFX\Women_Help_Me_003.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="119110116" Language="SFX">
+					<ShortName>Women_Help_Me_008.flac.wav</ShortName>
+					<Path>SFX\Women_Help_Me_008.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="127315225" Language="SFX">
+					<ShortName>Player_Fail_028.flac.wav</ShortName>
+					<Path>SFX\Player_Fail_028.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="136161608" Language="SFX">
+					<ShortName>Player Sucess_004.flac.wav</ShortName>
+					<Path>SFX\Player Sucess_004.flac_15C812D5.wem</Path>
+				</File>
+				<File Id="154410639" Language="SFX">
+					<ShortName>Men_Scream_011.flac.wav</ShortName>
+					<Path>SFX\Men_Scream_011.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="158326475" Language="SFX">
+					<ShortName>Body_Fall_Concrete_06.wav</ShortName>
+					<Path>SFX\Body_Fall_Concrete_06_DDC98EF4.wem</Path>
+				</File>
+				<File Id="160251228" Language="SFX">
+					<ShortName>Player_Fail_005.flac.wav</ShortName>
+					<Path>SFX\Player_Fail_005.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="160591223" Language="SFX">
+					<ShortName>Ringer.wav</ShortName>
+					<Path>SFX\Ringer_DDC98EF4.wem</Path>
+				</File>
+				<File Id="165448394" Language="SFX">
+					<ShortName>Player2_Fail_016.flac.wav</ShortName>
+					<Path>SFX\Player2_Fail_016.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="169067571" Language="SFX">
+					<ShortName>Player_Fail_031.flac.wav</ShortName>
+					<Path>SFX\Player_Fail_031.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="176970229" Language="SFX">
+					<ShortName>Fire_Loop_03.wav</ShortName>
+					<Path>SFX\Fire_Loop_03_3D767F59.wem</Path>
+				</File>
+				<File Id="182812797" Language="SFX">
+					<ShortName>Player Sucess_003.flac.wav</ShortName>
+					<Path>SFX\Player Sucess_003.flac_B8E600A2.wem</Path>
+				</File>
+				<File Id="202117477" Language="SFX">
+					<ShortName>Men_Help_Me_017.flac.wav</ShortName>
+					<Path>SFX\Men_Help_Me_017.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="213135060" Language="SFX">
+					<ShortName>Men_Help_Me_006.flac.wav</ShortName>
+					<Path>SFX\Men_Help_Me_006.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="218992925" Language="SFX">
+					<ShortName>Victim_fille_004.flac.wav</ShortName>
+					<Path>SFX\Victim_fille_004.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="239399216" Language="SFX">
+					<ShortName>Victim_fille_003.flac.wav</ShortName>
+					<Path>SFX\Victim_fille_003.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="245772895" Language="SFX">
+					<ShortName>Player_Fail_029.flac.wav</ShortName>
+					<Path>SFX\Player_Fail_029.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="250794936" Language="SFX">
+					<ShortName>Blank.wav</ShortName>
+					<Path>SFX\Blank_DDC98EF4.wem</Path>
+				</File>
+				<File Id="252747512" Language="SFX">
+					<ShortName>Fire_Loop_02-001.wav</ShortName>
+					<Path>SFX\Fire_Loop_02-001_CAB24179.wem</Path>
+				</File>
+				<File Id="253039287" Language="SFX">
+					<ShortName>Player2_Sucess_001.flac.wav</ShortName>
+					<Path>SFX\Player2_Sucess_001.flac_A720C39D.wem</Path>
+				</File>
+				<File Id="254033561" Language="SFX">
+					<ShortName>Player_Fail_009.flac.wav</ShortName>
+					<Path>SFX\Player_Fail_009.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="257733994" Language="SFX">
+					<ShortName>Player2_Fail_008.flac.wav</ShortName>
+					<Path>SFX\Player2_Fail_008.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="260859223" Language="SFX">
+					<ShortName>Men_Help_Me_008.flac.wav</ShortName>
+					<Path>SFX\Men_Help_Me_008.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="268854782" Language="SFX">
+					<ShortName>Player_Fail_021.flac.wav</ShortName>
+					<Path>SFX\Player_Fail_021.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="272798103" Language="SFX">
+					<ShortName>Player2_Sucess_006.flac.wav</ShortName>
+					<Path>SFX\Player2_Sucess_006.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="274822903" Language="SFX">
+					<ShortName>Men_Help_Me_019.flac.wav</ShortName>
+					<Path>SFX\Men_Help_Me_019.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="288124795" Language="SFX">
+					<ShortName>Player2_Fail_013.flac.wav</ShortName>
+					<Path>SFX\Player2_Fail_013.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="294576707" Language="SFX">
+					<ShortName>Player2_Sucess_007.flac.wav</ShortName>
+					<Path>SFX\Player2_Sucess_007.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="311237814" Language="SFX">
+					<ShortName>Player_Fail_011.flac.wav</ShortName>
+					<Path>SFX\Player_Fail_011.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="315446856" Language="SFX">
+					<ShortName>Firetruck_Siren-001.wav</ShortName>
+					<Path>SFX\Firetruck_Siren-001_DDC98EF4.wem</Path>
+				</File>
+				<File Id="315917856" Language="SFX">
+					<ShortName>Men_Help_Me_013.flac.wav</ShortName>
+					<Path>SFX\Men_Help_Me_013.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="325424669" Language="SFX">
+					<ShortName>Player2_Fail_001.flac.wav</ShortName>
+					<Path>SFX\Player2_Fail_001.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="330711516" Language="SFX">
+					<ShortName>Women_Scream_001.flac.wav</ShortName>
+					<Path>SFX\Women_Scream_001.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="339962021" Language="SFX">
+					<ShortName>Body_Fall_Concrete_8.wav</ShortName>
+					<Path>SFX\Body_Fall_Concrete_8_DDC98EF4.wem</Path>
+				</File>
+				<File Id="358061495" Language="SFX">
+					<ShortName>Victim_fille_010.flac.wav</ShortName>
+					<Path>SFX\Victim_fille_010.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="358837182" Language="SFX">
+					<ShortName>Player_Fail_016.flac.wav</ShortName>
+					<Path>SFX\Player_Fail_016.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="389888252" Language="SFX">
+					<ShortName>Men_Scream_010.flac.wav</ShortName>
+					<Path>SFX\Men_Scream_010.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="401330839" Language="SFX">
+					<ShortName>Body_Fall_Concrete_5.wav</ShortName>
+					<Path>SFX\Body_Fall_Concrete_5_DDC98EF4.wem</Path>
+				</File>
+				<File Id="410231650" Language="SFX">
+					<ShortName>Body_Fall_Concrete_10.wav</ShortName>
+					<Path>SFX\Body_Fall_Concrete_10_DDC98EF4.wem</Path>
+				</File>
+				<File Id="411121081" Language="SFX">
+					<ShortName>Victim_fille_008.flac.wav</ShortName>
+					<Path>SFX\Victim_fille_008.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="411167910" Language="SFX">
+					<ShortName>Player_Fail_022.flac.wav</ShortName>
+					<Path>SFX\Player_Fail_022.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="419863848" Language="SFX">
+					<ShortName>Body_Fall_Concrete_9.wav</ShortName>
+					<Path>SFX\Body_Fall_Concrete_9_DDC98EF4.wem</Path>
+				</File>
+				<File Id="432334833" Language="SFX">
+					<ShortName>Boy_Please_Help_2.wav</ShortName>
+					<Path>SFX\Boy_Please_Help_2_DDC98EF4.wem</Path>
+				</File>
+				<File Id="466630454" Language="SFX">
+					<ShortName>Net_Sucess.wav</ShortName>
+					<Path>SFX\Net_Sucess_DDC98EF4.wem</Path>
+				</File>
+				<File Id="467147693" Language="SFX">
+					<ShortName>Men_Scream_014.flac.wav</ShortName>
+					<Path>SFX\Men_Scream_014.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="492121164" Language="SFX">
+					<ShortName>Victim_fille_012.flac.wav</ShortName>
+					<Path>SFX\Victim_fille_012.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="511061528" Language="SFX">
+					<ShortName>samba.wav</ShortName>
+					<Path>SFX\samba_AA7F8326.wem</Path>
+				</File>
+				<File Id="518197322" Language="SFX">
+					<ShortName>Body_Fall_Concrete_2.wav</ShortName>
+					<Path>SFX\Body_Fall_Concrete_2_DDC98EF4.wem</Path>
+				</File>
+				<File Id="538161761" Language="SFX">
+					<ShortName>Player2_Fail_003.flac.wav</ShortName>
+					<Path>SFX\Player2_Fail_003.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="562938930" Language="SFX">
+					<ShortName>Player2_Sucess_003.flac.wav</ShortName>
+					<Path>SFX\Player2_Sucess_003.flac_9BF21AC4.wem</Path>
+				</File>
+				<File Id="564105313" Language="SFX">
+					<ShortName>Victim_fille_009.flac.wav</ShortName>
+					<Path>SFX\Victim_fille_009.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="566589305" Language="SFX">
+					<ShortName>Head_Impact.wav</ShortName>
+					<Path>SFX\Head_Impact_DDC98EF4.wem</Path>
+				</File>
+				<File Id="571408657" Language="SFX">
+					<ShortName>Player Sucess_001.flac.wav</ShortName>
+					<Path>SFX\Player Sucess_001.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="572126326" Language="SFX">
+					<ShortName>Player_Fail_008.flac.wav</ShortName>
+					<Path>SFX\Player_Fail_008.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="584325621" Language="SFX">
+					<ShortName>Men_Scream_009.flac.wav</ShortName>
+					<Path>SFX\Men_Scream_009.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="594435669" Language="SFX">
+					<ShortName>Footstep_Walking_Concrete_02.wav</ShortName>
+					<Path>SFX\Footstep_Walking_Concrete_02_DDC98EF4.wem</Path>
+				</File>
+				<File Id="614211142" Language="SFX">
+					<ShortName>Men_Scream_005.flac.wav</ShortName>
+					<Path>SFX\Men_Scream_005.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="642175150" Language="SFX">
+					<ShortName>Men_Help_Me_005.flac.wav</ShortName>
+					<Path>SFX\Men_Help_Me_005.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="657314082" Language="SFX">
+					<ShortName>Men_Scream_012.flac.wav</ShortName>
+					<Path>SFX\Men_Scream_012.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="674482115" Language="SFX">
+					<ShortName>Player_Fail_013.flac.wav</ShortName>
+					<Path>SFX\Player_Fail_013.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="692629819" Language="SFX">
+					<ShortName>Men_Scream_013.flac.wav</ShortName>
+					<Path>SFX\Men_Scream_013.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="707315493" Language="SFX">
+					<ShortName>Footstep_Walking_Concrete_01.wav</ShortName>
+					<Path>SFX\Footstep_Walking_Concrete_01_DDC98EF4.wem</Path>
+				</File>
+				<File Id="712350994" Language="SFX">
+					<ShortName>Boy_Please_Help.wav</ShortName>
+					<Path>SFX\Boy_Please_Help_DDC98EF4.wem</Path>
+				</File>
+				<File Id="720989896" Language="SFX">
+					<ShortName>Men_Help_Me_010.flac.wav</ShortName>
+					<Path>SFX\Men_Help_Me_010.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="744677272" Language="SFX">
+					<ShortName>Player Sucess_009.flac.wav</ShortName>
+					<Path>SFX\Player Sucess_009.flac_13AF7B44.wem</Path>
+				</File>
+				<File Id="807061991" Language="SFX">
+					<ShortName>Player Sucess_012.flac.wav</ShortName>
+					<Path>SFX\Player Sucess_012.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="813510949" Language="SFX">
+					<ShortName>Net_Break-002.wav</ShortName>
+					<Path>SFX\Net_Break-002_DDC98EF4.wem</Path>
+				</File>
+				<File Id="817401950" Language="SFX">
+					<ShortName>Victim_fille_006.flac.wav</ShortName>
+					<Path>SFX\Victim_fille_006.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="826109218" Language="SFX">
+					<ShortName>Player2_Sucess_004.flac.wav</ShortName>
+					<Path>SFX\Player2_Sucess_004.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="832139337" Language="SFX">
+					<ShortName>samba_intro.wav</ShortName>
+					<Path>SFX\samba_intro_DDC98EF4.wem</Path>
+				</File>
+				<File Id="832390708" Language="SFX">
+					<ShortName>Player_Fail_020.flac.wav</ShortName>
+					<Path>SFX\Player_Fail_020.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="841302779" Language="SFX">
+					<ShortName>Victim_fille_005.flac.wav</ShortName>
+					<Path>SFX\Victim_fille_005.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="849755669" Language="SFX">
+					<ShortName>Net_Break-001.wav</ShortName>
+					<Path>SFX\Net_Break-001_DDC98EF4.wem</Path>
+				</File>
+				<File Id="856530313" Language="SFX">
+					<ShortName>Player_Fail_001.flac.wav</ShortName>
+					<Path>SFX\Player_Fail_001.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="857452084" Language="SFX">
+					<ShortName>Victim_fille_001.flac.wav</ShortName>
+					<Path>SFX\Victim_fille_001.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="875651850" Language="SFX">
+					<ShortName>Net_Break-003.wav</ShortName>
+					<Path>SFX\Net_Break-003_DDC98EF4.wem</Path>
+				</File>
+				<File Id="899577048" Language="SFX">
+					<ShortName>Men_Scream_006.flac.wav</ShortName>
+					<Path>SFX\Men_Scream_006.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="902834191" Language="SFX">
+					<ShortName>Heat_Wave.flac.wav</ShortName>
+					<Path>SFX\Heat_Wave.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="916641592" Language="SFX">
+					<ShortName>Footstep_Walking_Concrete_06.wav</ShortName>
+					<Path>SFX\Footstep_Walking_Concrete_06_DDC98EF4.wem</Path>
+				</File>
+				<File Id="919918465" Language="SFX">
+					<ShortName>Mega_Rush.flac.wav</ShortName>
+					<Path>SFX\Mega_Rush.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="958600708" Language="SFX">
+					<ShortName>Player Sucess_007.flac.wav</ShortName>
+					<Path>SFX\Player Sucess_007.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="964499829" Language="SFX">
+					<ShortName>Footstep_Walking_Concrete_04.wav</ShortName>
+					<Path>SFX\Footstep_Walking_Concrete_04_DDC98EF4.wem</Path>
+				</File>
+				<File Id="987684530" Language="SFX">
+					<ShortName>Player2_Fail_005.flac.wav</ShortName>
+					<Path>SFX\Player2_Fail_005.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="997132956" Language="SFX">
+					<ShortName>Player2_Fail_002.flac.wav</ShortName>
+					<Path>SFX\Player2_Fail_002.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="1010320946" Language="SFX">
+					<ShortName>Body_Fall_Concrete_7.wav</ShortName>
+					<Path>SFX\Body_Fall_Concrete_7_DDC98EF4.wem</Path>
+				</File>
+				<File Id="1018816703" Language="SFX">
+					<ShortName>Men_Scream_004.flac.wav</ShortName>
+					<Path>SFX\Men_Scream_004.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="1029037610" Language="SFX">
+					<ShortName>Player2_Sucess_005.flac.wav</ShortName>
+					<Path>SFX\Player2_Sucess_005.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="1041783670" Language="SFX">
+					<ShortName>Body_Fall_Concrete_04.wav</ShortName>
+					<Path>SFX\Body_Fall_Concrete_04_DDC98EF4.wem</Path>
+				</File>
+				<File Id="1049640488" Language="SFX">
+					<ShortName>Men_Scream_007.flac.wav</ShortName>
+					<Path>SFX\Men_Scream_007.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="1059845682" Language="SFX">
+					<ShortName>Victim_fille_011.flac.wav</ShortName>
+					<Path>SFX\Victim_fille_011.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="1065350338" Language="SFX">
+					<ShortName>Body_Fall_Concrete_1.wav</ShortName>
+					<Path>SFX\Body_Fall_Concrete_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="1070147475" Language="SFX">
+					<ShortName>Player2_Fail_007.flac.wav</ShortName>
+					<Path>SFX\Player2_Fail_007.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="1072723722" Language="SFX">
+					<ShortName>Men_Help_Me_011.flac.wav</ShortName>
+					<Path>SFX\Men_Help_Me_011.flac_DDC98EF4.wem</Path>
+				</File>
+				<File Id="1072943858" Language="SFX">
+					<ShortName>Men_Scream_002.flac.wav</ShortName>
+					<Path>SFX\Men_Scream_002.flac_DDC98EF4.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

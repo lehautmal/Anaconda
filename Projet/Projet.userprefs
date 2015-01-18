@@ -1,8 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PersoControl.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Shaders\PompierShader.shader">
     <Files>
-      <File FileName="Assets\Scripts\PersoControl.cs" Line="35" Column="1" />
+      <File FileName="Assets\Scripts\SpawnMaster.cs" Line="200" Column="28" />
+      <File FileName="Assets\Scripts\PersoControl.cs" Line="1" Column="1" />
+      <File FileName="Assets\Shaders\PompierShader.shader" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
