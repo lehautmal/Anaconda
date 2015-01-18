@@ -5,6 +5,8 @@ public class SpawnMaster : MonoBehaviour {
 	private const int RowSize = 9;
 	private const float RowSizeF = 9f;
 
+	private float InitialTime;
+
 	public double TopRowSpawnRate = 8.0; // en milliseconde
 	public double MiddleRowSpawnRate = 1.0; 
 	public double BottomRowSpawnRate = 1.0; 
@@ -34,6 +36,8 @@ public class SpawnMaster : MonoBehaviour {
 	private Spawner[] BottomRowSpawners = new Spawner[RowSize];
 	// Use this for initialization
 	void Start () {
+
+		InitialTime = Time.time;
 		//SpawnerScript = SpawnerObject.GetComponent(typeof(Spawner)) as Spawner;
 		for (int i = 0; i < RowSize; i++) {
 			if (TopRow[i] != null){
@@ -59,30 +63,32 @@ public class SpawnMaster : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+
+
 		//SpawnerScript.Spawn ();
 		//Debug.Log (Time.time);
-		if (Time.time > TopRowNextSpawn) {
+		if ((Time.time - InitialTime)> TopRowNextSpawn) {
 			float RandomNumber = Random.Range(0f, RowSizeF);
 			int Pos = (int)Mathf.Floor(RandomNumber);
 			TopRowSpawners[Pos].Spawn();
 			TopRowNextSpawn += ((Random.Range(0, RandomizerRange)) + CurrentTopRowSpawnRate);
 
 		}
-		if (Time.time > MiddleRowNextSpawn) {
+		if ((Time.time - InitialTime) > MiddleRowNextSpawn) {
 			float RandomNumber = Random.Range(0f, RowSizeF);
 			int Pos = (int)Mathf.Floor(RandomNumber);
 			MiddleRowSpawners[Pos].Spawn();
 			MiddleRowNextSpawn += ((Random.Range(0, RandomizerRange)) + CurrentMiddleRowSpawnRate);
 			
 		}
-		if (Time.time > BottomRowNextSpawn) {
+		if ((Time.time - InitialTime) > BottomRowNextSpawn) {
 			float RandomNumber = Random.Range(0f, RowSizeF);
 			int Pos = (int)Mathf.Floor(RandomNumber);
 			BottomRowSpawners[Pos].Spawn();
 			BottomRowNextSpawn += ((Random.Range(0, RandomizerRange)) + CurrentBottomRowSpawnRate);
 			
 		}
-		if (Time.time > NextGrowth ){
+		if ((Time.time - InitialTime) > NextGrowth ){
 			NextGrowth += SpawnGrowthInterval;
 			CurrentTopRowSpawnRate = CurrentTopRowSpawnRate / TopRowSpawnGrowthRate;
 			CurrentMiddleRowSpawnRate = CurrentMiddleRowSpawnRate / MiddleRowSpawnGrowthRate;

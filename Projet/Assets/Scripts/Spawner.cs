@@ -21,7 +21,6 @@ public class Spawner : MonoBehaviour
 
 		public void Spawn ()
 		{
-		Debug.Log ("SPAWN");
 			ClonedFallingObject = MonoBehaviour.Instantiate (OriginalFallingObject, this.transform.position, this.transform.rotation) as GameObject;
 		}
 }
