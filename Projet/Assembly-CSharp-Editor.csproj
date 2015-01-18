@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\StrumpyShaderEditor\Editor\Scripts\NodeEditorWindow.cs" />
      <Compile Include="Assets\StrumpyShaderEditor\Editor\Scripts\StrumpyPreviewWindow.cs" />
+     <None Include="Assets\StreamingAssets\desc.txt" />
      <None Include="Assets\StrumpyShaderEditor\Editor\Resources\Internal\Temp\TempShader.shader" />
      <None Include="Assets\Shaders\PompierShader.shader" />
      <None Include="Assets\StrumpyShaderEditor\Editor\Resources\Internal\TextureCopy.shader" />
