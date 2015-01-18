@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="69">
+	<ValidationCacheItem File="C:\Users\jérémi\Documents\Anaconda\Anaconda\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="4126235401" DateHigh="30421831"/>
+	<ValidationCacheItem File="C:\Users\jérémi\Documents\Anaconda\Anaconda\Anaconda.jérémi.wsettings" DateLow="43867070" DateHigh="30421832"/>
+	<ValidationCacheItem File="C:\Users\jérémi\Documents\Anaconda\Anaconda\Anaconda.wproj" DateLow="3403482463" DateHigh="30421722"/>
+	<ValidationCacheItem File="C:\Users\jérémi\Documents\Anaconda\Anaconda\Attenuations\Default Work Unit.wwu" DateLow="3403972783" DateHigh="30421722"/>
+	<ValidationCacheItem File="C:\Users\jérémi\Documents\Anaconda\Anaconda\Control Surface Sessions\Default Work Unit.wwu" DateLow="3403832714" DateHigh="30421722"/>
+	<ValidationCacheItem File="C:\Users\jérémi\Documents\Anaconda\Anaconda\Conversion Settings\Default Work Unit.wwu" DateLow="3403702592" DateHigh="30421722"/>
+	<ValidationCacheItem File="C:\Users\jérémi\Documents\Anaconda\Anaconda\Conversion Settings\Factory Conversion Settings.wwu" DateLow="4129905920" DateHigh="30405605"/>
+	<ValidationCacheItem File="C:\Users\jérémi\Documents\Anaconda\Anaconda\Dynamic Dialogue\Default Work Unit.wwu" DateLow="3403672571" DateHigh="30421722"/>
+	<ValidationCacheItem File="C:\Users\jérémi\Documents\Anaconda\Anaconda\Effects\Default Work Unit.wwu" DateLow="3403732528" DateHigh="30421722"/>
+	<ValidationCacheItem File="C:\Users\jérémi\Documents\Anaconda\Anaconda\Effects\Factory Effects.wwu" DateLow="4129905920" DateHigh="30405605"/>
+	<ValidationCacheItem File="C:\Users\jérémi\Documents\Anaconda\Anaconda\Events\Default Work Unit.wwu" DateLow="1040769122" DateHigh="30421810"/>
+	<ValidationCacheItem File="C:\Users\jérémi\Documents\Anaconda\Anaconda\Game Parameters\Default Work Unit.wwu" DateLow="3403902640" DateHigh="30421722"/>
+	<ValidationCacheItem File="C:\Users\jérémi\Documents\Anaconda\Anaconda\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="3403762635" DateHigh="30421722"/>
+	<ValidationCacheItem File="C:\Users\jérémi\Documents\Anaconda\Anaconda\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="3403582533" DateHigh="30421722"/>
+	<ValidationCacheItem File="C:\Users\jérémi\Documents\Anaconda\Anaconda\Mixing Sessions\Default Work Unit.wwu" DateLow="3403782649" DateHigh="30421722"/>
+	<ValidationCacheItem File="C:\Users\jérémi\Documents\Anaconda\Anaconda\Modulators\Default Work Unit.wwu" DateLow="3403802663" DateHigh="30421722"/>
+	<ValidationCacheItem File="C:\Users\jérémi\Documents\Anaconda\Anaconda\Presets\Default Work Unit.wwu" DateLow="3403652476" DateHigh="30421722"/>
+	<ValidationCacheItem File="C:\Users\jérémi\Documents\Anaconda\Anaconda\Queries\Default Work Unit.wwu" DateLow="3403922748" DateHigh="30421722"/>
+	<ValidationCacheItem File="C:\Users\jérémi\Documents\Anaconda\Anaconda\Queries\Factory Queries.wwu" DateLow="4129905920" DateHigh="30405605"/>
+	<ValidationCacheItem File="C:\Users\jérémi\Documents\Anaconda\Anaconda\SoundBanks\Default Work Unit.wwu" DateLow="3403872627" DateHigh="30421722"/>
+	<ValidationCacheItem File="C:\Users\jérémi\Documents\Anaconda\Anaconda\Soundcaster Sessions\Default Work Unit.wwu" DateLow="3819516916" DateHigh="30421806"/>
+	<ValidationCacheItem File="C:\Users\jérémi\Documents\Anaconda\Anaconda\States\Default Work Unit.wwu" DateLow="3403632440" DateHigh="30421722"/>
+	<ValidationCacheItem File="C:\Users\jérémi\Documents\Anaconda\Anaconda\Switches\Default Work Unit.wwu" DateLow="3403602543" DateHigh="30421722"/>
+	<ValidationCacheItem File="C:\Users\jérémi\Documents\Anaconda\Anaconda\Triggers\Default Work Unit.wwu" DateLow="3403852694" DateHigh="30421722"/>
 	<ValidationCacheItem File="C:\Users\jérémi\Documents\WwiseProjects\Anaconda\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="3403522375" DateHigh="30421722"/>
 	<ValidationCacheItem File="C:\Users\jérémi\Documents\WwiseProjects\Anaconda\Anaconda.jérémi.wsettings" DateLow="1867486222" DateHigh="30421723"/>
 	<ValidationCacheItem File="C:\Users\jérémi\Documents\WwiseProjects\Anaconda\Anaconda.wproj" DateLow="3403482463" DateHigh="30421722"/>
