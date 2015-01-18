@@ -1,13 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\SpawnMaster.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\FallingObject.cs">
     <Files>
-      <File FileName="Assets\Scripts\SpawnMaster.cs" Line="176" Column="30" />
-      <File FileName="Assets\Scripts\FallingObject.cs" Line="18" Column="65" />
-      <File FileName="Assets\Scripts\Spawner.cs" Line="35" Column="1" />
-      <File FileName="Assets\Scripts\HUD.cs" Line="13" Column="12" />
-      <File FileName="Assets\Scripts\NetBehavior.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\PersoControl.cs" Line="38" Column="20" />
+      <File FileName="Assets\Scripts\NetBehavior.cs" Line="14" Column="3" />
+      <File FileName="Assets\Scripts\PersoControl.cs" Line="41" Column="5" />
+      <File FileName="Assets\Scripts\FallingObject.cs" Line="74" Column="8" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

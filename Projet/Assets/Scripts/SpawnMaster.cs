@@ -215,9 +215,9 @@ public class SpawnMaster : MonoBehaviour
 						BottomRowNextSpawn = MiddleRowNextSpawn + 5;
 						break;
 				case 9 : 
-						TopRowSpawnRate = 12;
-						MiddleRowSpawnRate = 12;
-						BottomRowSpawnRate = 12;
+						TopRowSpawnRate = 9;
+						MiddleRowSpawnRate = 9;
+						BottomRowSpawnRate = 9;
 						BotBad = true;
 						break;
 
