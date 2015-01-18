@@ -1,0 +1,156 @@
+fileFormatVersion: 2
+guid: 94e059b58afcc8441a0f39f8bc58e2de
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Avant-Bras_D
+    100002: Avant-Bras_G
+    100004: Bassin
+    100006: Bip001
+    100008: Bip001 HeadNub
+    100010: Bip001 L Calf
+    100012: Bip001 L Finger0Nub
+    100014: Bip001 L Foot
+    100016: Bip001 L Toe0
+    100018: Bip001 L Toe01
+    100020: Bip001 L Toe02
+    100022: Bip001 L Toe0Nub
+    100024: Bip001 Ponytail1
+    100026: Bip001 Ponytail11
+    100028: Bip001 Ponytail12
+    100030: Bip001 R Calf
+    100032: Bip001 R Finger0Nub
+    100034: Bip001 R Foot
+    100036: Bip001 R Toe0
+    100038: Bip001 R Toe01
+    100040: Bip001 R Toe02
+    100042: Bip001 R Toe0Nub
+    100044: Bras_D
+    100046: Bras_G
+    100048: Cou
+    100050: Cuisse_D
+    100052: Cuisse_G
+    100054: Doigt_D02
+    100056: Doigt_D03
+    100058: Doigt_D04
+    100060: Doigt_D05
+    100062: Doigt_D_Pouce
+    100064: Doigt_G02
+    100066: Doigt_G03
+    100068: Doigt_G04
+    100070: Doigt_G05
+    100072: Doigt_G_Pouce
+    100074: Epaule_D
+    100076: Epaule_G
+    100078: Epine_dorsale01
+    100080: Epine_dorsale02
+    100082: Epine_dorsale03
+    100084: Homme
+    100086: //RootNode
+    100088: Main_D
+    100090: Main_G
+    100092: Tete
+    400000: Avant-Bras_D
+    400002: Avant-Bras_G
+    400004: Bassin
+    400006: Bip001
+    400008: Bip001 HeadNub
+    400010: Bip001 L Calf
+    400012: Bip001 L Finger0Nub
+    400014: Bip001 L Foot
+    400016: Bip001 L Toe0
+    400018: Bip001 L Toe01
+    400020: Bip001 L Toe02
+    400022: Bip001 L Toe0Nub
+    400024: Bip001 Ponytail1
+    400026: Bip001 Ponytail11
+    400028: Bip001 Ponytail12
+    400030: Bip001 R Calf
+    400032: Bip001 R Finger0Nub
+    400034: Bip001 R Foot
+    400036: Bip001 R Toe0
+    400038: Bip001 R Toe01
+    400040: Bip001 R Toe02
+    400042: Bip001 R Toe0Nub
+    400044: Bras_D
+    400046: Bras_G
+    400048: Cou
+    400050: Cuisse_D
+    400052: Cuisse_G
+    400054: Doigt_D02
+    400056: Doigt_D03
+    400058: Doigt_D04
+    400060: Doigt_D05
+    400062: Doigt_D_Pouce
+    400064: Doigt_G02
+    400066: Doigt_G03
+    400068: Doigt_G04
+    400070: Doigt_G05
+    400072: Doigt_G_Pouce
+    400074: Epaule_D
+    400076: Epaule_G
+    400078: Epine_dorsale01
+    400080: Epine_dorsale02
+    400082: Epine_dorsale03
+    400084: Homme
+    400086: //RootNode
+    400088: Main_D
+    400090: Main_G
+    400092: Tete
+    4300000: Homme
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Homme
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
