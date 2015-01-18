@@ -8,7 +8,7 @@ public class Engine : MonoBehaviour {
 
 	private Fader Fader;
 
-	public int NbDeathMax = 3;
+	public int NbDeathMax = 1;
 
 	// Use this for initialization
 	void Start () {
@@ -29,8 +29,9 @@ public class Engine : MonoBehaviour {
 		{
 			Debug.Log ("GAMEOVER");
 			//FIN DU JEU
-			System.Threading.Thread.Sleep(1000);
-			Fader.GotoScene("Scene");
+			//System.Threading.Thread.Sleep(1000);
+			Application.LoadLevel("Scene");
+			//Fader.GotoScene("Scene");
 		}
 	}
 

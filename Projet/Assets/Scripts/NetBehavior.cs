@@ -39,6 +39,7 @@ public class NetBehavior : MonoBehaviour
 
 			if (Distance > WarnDistance)
 			{
+			Debug.Log ("TEST");
 			ClothRender.material.SetFloat("_Blend", 1 - (MaxDistance - Distance));		
 			}
 }

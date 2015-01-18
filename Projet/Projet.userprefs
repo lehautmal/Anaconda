@@ -1,11 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Engine.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\FallingObject.cs">
     <Files>
-      <File FileName="Assets\Scripts\NetBehavior.cs" Line="44" Column="2" />
+      <File FileName="Assets\Scripts\NetBehavior.cs" Line="39" Column="1" />
       <File FileName="Assets\Scripts\Spawner.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Engine.cs" Line="24" Column="2" />
-      <File FileName="Assets\Fader.cs" Line="25" Column="15" />
+      <File FileName="Assets\Scripts\Engine.cs" Line="30" Column="27" />
+      <File FileName="Assets\Scripts\Fader.cs" Line="17" Column="2" />
+      <File FileName="Assets\Scripts\FallingObject.cs" Line="25" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
