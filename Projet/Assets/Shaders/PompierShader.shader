@@ -24,6 +24,7 @@ _Sizecutoutmask("_Sizecutoutmask", Range(0,1) ) = 0.193
 "Queue"="Geometry-1"
 "IgnoreProjector"="False"
 "RenderType"="TransparentCutout"
+"CullMode" = "None"
 
 		}
 
