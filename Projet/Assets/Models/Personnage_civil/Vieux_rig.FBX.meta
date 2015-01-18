@@ -1,0 +1,206 @@
+fileFormatVersion: 2
+guid: 112451b4d57620740bdc0ee41a79734f
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Avant-Bras_D
+    100002: Avant-Bras_G
+    100004: Bassin
+    100006: Bip001
+    100008: Bip001 HeadNub
+    100010: Bip001 L Calf
+    100012: Bip001 L Finger0Nub
+    100014: Bip001 L Finger1Nub
+    100016: Bip001 L Finger2Nub
+    100018: Bip001 L Finger3Nub
+    100020: Bip001 L Finger4Nub
+    100022: Bip001 L Foot
+    100024: Bip001 L Toe0
+    100026: Bip001 L Toe01
+    100028: Bip001 L Toe02
+    100030: Bip001 L Toe0Nub
+    100032: Bip001 Ponytail1
+    100034: Bip001 Ponytail11
+    100036: Bip001 Ponytail12
+    100038: Bip001 Ponytail1Nub
+    100040: Bip001 R Calf
+    100042: Bip001 R Finger0Nub
+    100044: Bip001 R Finger1Nub
+    100046: Bip001 R Finger2Nub
+    100048: Bip001 R Finger3Nub
+    100050: Bip001 R Finger4Nub
+    100052: Bip001 R Foot
+    100054: Bip001 R Toe0
+    100056: Bip001 R Toe01
+    100058: Bip001 R Toe02
+    100060: Bip001 R Toe0Nub
+    100062: Bras_D
+    100064: Bras_G
+    100066: Cou
+    100068: Cuisse_D
+    100070: Cuisse_G
+    100072: Doigt_D02
+    100074: Doigt_D03
+    100076: Doigt_D04
+    100078: Doigt_D05
+    100080: Doigt_D_Pouce
+    100082: Doigt_G02
+    100084: Doigt_G03
+    100086: Doigt_G04
+    100088: Doigt_G05
+    100090: Doigt_G_Pouce
+    100092: Epaule_D
+    100094: Epaule_G
+    100096: Epine_dorsale01
+    100098: Epine_dorsale02
+    100100: Epine_dorsale03
+    100102: Gras_Bas01
+    100104: Gras_Bas02
+    100106: Gras_Bas03
+    100108: Gras_Bas04
+    100110: Gras_Haut01
+    100112: Gras_Haut02
+    100114: Gras_Haut03
+    100116: Gras_Haut04
+    100118: Gras_NUB01
+    100120: Gras_NUB02
+    100122: Gras_NUB03
+    100124: Gras_NUB04
+    100126: IK Chain001
+    100128: IK Chain002
+    100130: IK Chain003
+    100132: IK Chain004
+    100134: Main_D
+    100136: Main_G
+    100138: Tete
+    100140: Vieux
+    100142: //RootNode
+    400000: Avant-Bras_D
+    400002: Avant-Bras_G
+    400004: Bassin
+    400006: Bip001
+    400008: Bip001 HeadNub
+    400010: Bip001 L Calf
+    400012: Bip001 L Finger0Nub
+    400014: Bip001 L Finger1Nub
+    400016: Bip001 L Finger2Nub
+    400018: Bip001 L Finger3Nub
+    400020: Bip001 L Finger4Nub
+    400022: Bip001 L Foot
+    400024: Bip001 L Toe0
+    400026: Bip001 L Toe01
+    400028: Bip001 L Toe02
+    400030: Bip001 L Toe0Nub
+    400032: Bip001 Ponytail1
+    400034: Bip001 Ponytail11
+    400036: Bip001 Ponytail12
+    400038: Bip001 Ponytail1Nub
+    400040: Bip001 R Calf
+    400042: Bip001 R Finger0Nub
+    400044: Bip001 R Finger1Nub
+    400046: Bip001 R Finger2Nub
+    400048: Bip001 R Finger3Nub
+    400050: Bip001 R Finger4Nub
+    400052: Bip001 R Foot
+    400054: Bip001 R Toe0
+    400056: Bip001 R Toe01
+    400058: Bip001 R Toe02
+    400060: Bip001 R Toe0Nub
+    400062: Bras_D
+    400064: Bras_G
+    400066: Cou
+    400068: Cuisse_D
+    400070: Cuisse_G
+    400072: Doigt_D02
+    400074: Doigt_D03
+    400076: Doigt_D04
+    400078: Doigt_D05
+    400080: Doigt_D_Pouce
+    400082: Doigt_G02
+    400084: Doigt_G03
+    400086: Doigt_G04
+    400088: Doigt_G05
+    400090: Doigt_G_Pouce
+    400092: Epaule_D
+    400094: Epaule_G
+    400096: Epine_dorsale01
+    400098: Epine_dorsale02
+    400100: Epine_dorsale03
+    400102: Gras_Bas01
+    400104: Gras_Bas02
+    400106: Gras_Bas03
+    400108: Gras_Bas04
+    400110: Gras_Haut01
+    400112: Gras_Haut02
+    400114: Gras_Haut03
+    400116: Gras_Haut04
+    400118: Gras_NUB01
+    400120: Gras_NUB02
+    400122: Gras_NUB03
+    400124: Gras_NUB04
+    400126: IK Chain001
+    400128: IK Chain002
+    400130: IK Chain003
+    400132: IK Chain004
+    400134: Main_D
+    400136: Main_G
+    400138: Tete
+    400140: Vieux
+    400142: //RootNode
+    4300000: Vieux
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Vieux
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
