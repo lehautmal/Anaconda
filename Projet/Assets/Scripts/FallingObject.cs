@@ -9,6 +9,7 @@ public class FallingObject : MonoBehaviour
 		private NetBehavior Net;
 		private float InitTime;
 		public float DelayBeforeJump;
+		public bool isGood = true;
 
 		// Use this for initialization
 		void Start ()
@@ -37,20 +38,28 @@ public class FallingObject : MonoBehaviour
 
 		void OnCollisionEnter2D (Collision2D col)
 		{
-				if (col.gameObject.name == "Floor") {
-						renderer.material.color = Color.red;
-						Engine.UpdateDeath ();
-				} else if (col.gameObject.name == "Filet") {
-						renderer.material.color = Color.green;
-						Engine.UpdateSaved ();
-				} else if (col.gameObject.name == "Player1" && col.GetType () == typeof(CircleCollider2D)) {
-						renderer.material.color = Color.yellow;
-				} else if (col.gameObject.name == "Player2") {
-						renderer.material.color = Color.yellow;	
-				}
-				this.collider2D.enabled = false;
-				Destroy (this.gameObject, 1);
-				HasFallen = true;
+				if (isGood) {	
+						if (col.gameObject.name == "Floor") {
+								Engine.UpdateDeath ();
+						} else if (col.gameObject.name == "Filet") {
+								Engine.UpdateSaved ();
+						} else if (col.gameObject.name == "Player1" && col.GetType () == typeof(CircleCollider2D)) {
+						} else if (col.gameObject.name == "Player2") {
+						}
+
+				} else 
+				{
+					if (col.gameObject.name == "Floor") {						
+					} else if (col.gameObject.name == "Filet") {
+						Engine.GameOver();
+					} else if (col.gameObject.name == "Player1" && col.GetType () == typeof(CircleCollider2D)) {
+					} else if (col.gameObject.name == "Player2") {
+					}
+			}
+		this.collider2D.enabled = false;
+		Destroy (this.gameObject, 1);
+		HasFallen = true;
+
 		}
 
 	

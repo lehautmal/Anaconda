@@ -1,13 +1,6 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\NetBehavior.cs">
-    <Files>
-      <File FileName="Assets\Scripts\NetBehavior.cs" Line="32" Column="45" />
-      <File FileName="Assets\Scripts\Engine.cs" Line="29" Column="28" />
-      <File FileName="Assets\Scripts\FallingObject.cs" Line="26" Column="4" />
-      <File FileName="Assets\Scripts\SpawnMaster.cs" Line="91" Column="48" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
