@@ -3,6 +3,7 @@ using System.Collections;
 
 public class SpawnMaster : MonoBehaviour
 {
+		public GameObject[] Characters;	
 		private HUD Interface;
 		private const int RowSize = 9;
 		private const float RowSizeF = 9f;
@@ -45,13 +46,16 @@ public class SpawnMaster : MonoBehaviour
 				//SpawnerScript = SpawnerObject.GetComponent(typeof(Spawner)) as Spawner;
 				for (int i = 0; i < RowSize; i++) {
 						if (TopRow [i] != null) {
-								TopRowSpawners [i] = TopRow [i].GetComponent (typeof(Spawner)) as Spawner;	
+								TopRowSpawners [i] = TopRow [i].GetComponent (typeof(Spawner)) as Spawner;
+				TopRowSpawners[i].Characters = this.Characters;
 						}
 						if (MiddleRow [i] != null) {
 								MiddleRowSpawners [i] = MiddleRow [i].GetComponent (typeof(Spawner)) as Spawner;
+				MiddleRowSpawners[i].Characters = this.Characters;
 						}
 						if (BottomRow [i] != null) {
 								BottomRowSpawners [i] = BottomRow [i].GetComponent (typeof(Spawner)) as Spawner;
+				BottomRowSpawners[i].Characters = this.Characters;
 						}
 				}
 				IncreaseWave ();
@@ -88,11 +92,13 @@ public class SpawnMaster : MonoBehaviour
 
 
 				if ((Time.time - InitialTime) > TopRowNextSpawn) {
+
 						float RandomNumber = Random.Range (0f, RowSizeF);
 						int Pos = (int)Mathf.Floor (RandomNumber);
 						TopRowSpawners [Pos].Spawn ();
 						TopRowNextSpawn += TopRowSpawnRate;
 						Debug.Log ("Top Row" + Time.time);
+
 						//TopRowNextSpawn += ((Random.Range(0, RandomizerRange)) + CurrentTopRowSpawnRate);
 
 
@@ -174,8 +180,8 @@ public class SpawnMaster : MonoBehaviour
 
 		public void IncreaseWave ()
 		{
-				CurrentWaveNumber = 10;
-				//CurrentWaveNumber++;
+				//CurrentWaveNumber = 1;
+				CurrentWaveNumber++;
 				Debug.Log ("WAVE # " + CurrentWaveNumber);
 				Interface.Level = CurrentWaveNumber;
 				
@@ -186,6 +192,7 @@ public class SpawnMaster : MonoBehaviour
 						break;
 				case 2:
 						TopRowSpawnRate = 7;
+						TopRowNextSpawn = 26;
 						break;
 				case 3:
 						TopRowSpawnRate = 14;

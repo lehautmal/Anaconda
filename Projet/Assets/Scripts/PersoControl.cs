@@ -39,10 +39,12 @@ public class PersoControl : MonoBehaviour {
 		
 		if (IsStunned) {
 						MoveHorizontal *= -1;
+						Animateur.SetBool("PlayerHit", true);
 						if (Time.time > StunEndTime) {
 								IsStunned = false;
 								StunFX.renderer.enabled = false;
 								StunFX.Pause ();
+								Animateur.SetBool("PlayerHit", false);
 						}			
 				}
 		
@@ -92,7 +94,6 @@ public class PersoControl : MonoBehaviour {
 						StunFX.renderer.enabled = true;
 						StunFX.Play ();
 						StunEndTime = Time.time + StunDuration;
-						Animateur.SetBool("PlayerHit", true);
 				}
 		}
 }
