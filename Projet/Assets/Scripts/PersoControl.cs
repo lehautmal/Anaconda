@@ -10,7 +10,6 @@ public class PersoControl : MonoBehaviour {
 	public GameObject OtherPlayer;  
 	public float Vitesse = 10;
 	public float Stretch = 7;
-	private AkAmbient AkTest;
 
 	public Animator Animateur;
 	public GameObject Pompier;
