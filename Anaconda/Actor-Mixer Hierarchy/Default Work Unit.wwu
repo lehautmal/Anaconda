@@ -934,6 +934,12 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Victim_fille_009_flac" ID="{3E1F104B-16CE-47A9-BFC4-CB346360E052}" ShortID="564105313">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.173181452354673"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.282559211736573"/>
+												<Property Name="FadeOutShape" Type="int16" Value="1"/>
+												<Property Name="TrimEnd" Type="Real64" Value="5.3868546495585"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Victim_fille_009.flac.wav</AudioFile>
 										</AudioFileSource>
@@ -1035,25 +1041,6 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="Women_Scream_008_flac" ID="{EF71CD8A-C081-44BC-8C4A-337F3CBD4B96}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Blank" ID="{87519B12-B5E3-4BF4-AA1E-9B5312FD6F3A}" ShortID="633453341" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D591EE88-6519-481F-BB68-4ED9C3BE97BE}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F17E64E-3EE8-4257-BB7D-EF483DAFBCF3}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Blank" ID="{7AB7212C-17D1-4C21-B97B-5F9516C8F2C8}" ShortID="250794936">
-											<Language>SFX</Language>
-											<AudioFile>Blank.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Blank" ID="{7AB7212C-17D1-4C21-B97B-5F9516C8F2C8}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
@@ -1273,28 +1260,6 @@
 										<ActiveSource Name="Women_Help_Me_008_flac" ID="{956E48C4-5B88-4BA6-B0B6-3488A68FEBD3}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Blank" ID="{C537A406-4797-44E1-ABF1-F8DDE82769B5}" ShortID="233310157" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D591EE88-6519-481F-BB68-4ED9C3BE97BE}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F17E64E-3EE8-4257-BB7D-EF483DAFBCF3}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Blank" ID="{5E8B5576-34D3-456C-A019-4CB68BA02F8A}" ShortID="493677134">
-											<Language>SFX</Language>
-											<AudioFile>Blank.wav</AudioFile>
-											<ConvertedFileIDList>
-												<File ID="250794936"/>
-											</ConvertedFileIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Blank" ID="{5E8B5576-34D3-456C-A019-4CB68BA02F8A}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
 					</ChildrenList>
@@ -1334,9 +1299,6 @@
 								</Property>
 								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-6</Value>
-									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
 											<Modifier Name="" ID="{057D67F4-1F61-4CA9-9044-33CE16E70203}"/>
@@ -1475,28 +1437,6 @@
 										<ActiveSource Name="Boy_Please_Help_2" ID="{9C077DA7-73B5-44D5-B990-ECFF1499CDAD}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Blank" ID="{B59A3101-C421-4203-A56B-866154EB41E8}" ShortID="597011805" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D591EE88-6519-481F-BB68-4ED9C3BE97BE}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F17E64E-3EE8-4257-BB7D-EF483DAFBCF3}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Blank" ID="{F91C8D24-185C-4C76-B8B8-B0EA04168B15}" ShortID="44607316">
-											<Language>SFX</Language>
-											<AudioFile>Blank.wav</AudioFile>
-											<ConvertedFileIDList>
-												<File ID="250794936"/>
-											</ConvertedFileIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Blank" ID="{F91C8D24-185C-4C76-B8B8-B0EA04168B15}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="NPC_Male_Jump" ID="{C5BB2703-938A-4359-BE6E-970CE7F54885}" ShortID="168708118">
@@ -1518,9 +1458,6 @@
 								</Property>
 								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-1</Value>
-									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
 											<Modifier Name="" ID="{CD8B71B0-4C3F-4214-B802-E2FC40F18BAE}">
@@ -1773,40 +1710,11 @@
 										<ActiveSource Name="Men_Scream_016_flac" ID="{A0677421-EF1E-4B37-A591-B901D1BD4C81}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Blank" ID="{29BC8F59-F5CB-4453-8F6E-6DD361DF61E0}" ShortID="470367925" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D591EE88-6519-481F-BB68-4ED9C3BE97BE}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F17E64E-3EE8-4257-BB7D-EF483DAFBCF3}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Blank" ID="{D6F60DB1-D5DF-4EC5-9164-FE0F94F714D9}" ShortID="366385989">
-											<Language>SFX</Language>
-											<AudioFile>Blank.wav</AudioFile>
-											<ConvertedFileIDList>
-												<File ID="250794936"/>
-											</ConvertedFileIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Blank" ID="{D6F60DB1-D5DF-4EC5-9164-FE0F94F714D9}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="NPC_Old" ID="{E5D8F58B-4D8E-43CF-AC83-4FDA4238591F}" ShortID="389114736">
-					<PropertyList>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-6</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D591EE88-6519-481F-BB68-4ED9C3BE97BE}"/>
@@ -1826,7 +1734,7 @@
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
-								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1854,28 +1762,6 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="Men_Help_Me_010_flac" ID="{37B36E66-7D08-4E11-9BF9-5BBCE95126FC}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Blank" ID="{1D1AB5E2-D04D-48AC-A25E-95E548062935}" ShortID="247144612" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D591EE88-6519-481F-BB68-4ED9C3BE97BE}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F17E64E-3EE8-4257-BB7D-EF483DAFBCF3}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Blank" ID="{97B600E6-F44A-4028-928B-C35E4E263AD5}" ShortID="380614926">
-											<Language>SFX</Language>
-											<AudioFile>Blank.wav</AudioFile>
-											<ConvertedFileIDList>
-												<File ID="250794936"/>
-											</ConvertedFileIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Blank" ID="{97B600E6-F44A-4028-928B-C35E4E263AD5}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Men_Help_Me_005_flac" ID="{5A8EAE9A-5AB8-42A9-A112-B74B316CC74E}" ShortID="879969503" Type="SoundFX">
@@ -2075,28 +1961,6 @@
 										<ActiveSource Name="Men_Scream_004_flac" ID="{63C54D59-4006-492E-8350-9ADEF83B8F68}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Blank" ID="{BCF316C6-1667-484D-B3B5-8E1F6519E858}" ShortID="159258692" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D591EE88-6519-481F-BB68-4ED9C3BE97BE}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F17E64E-3EE8-4257-BB7D-EF483DAFBCF3}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Blank" ID="{524938B2-DE0C-432E-9C06-599C97C54309}" ShortID="865002233">
-											<Language>SFX</Language>
-											<AudioFile>Blank.wav</AudioFile>
-											<ConvertedFileIDList>
-												<File ID="250794936"/>
-											</ConvertedFileIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Blank" ID="{524938B2-DE0C-432E-9C06-599C97C54309}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
 					</ChildrenList>
@@ -2106,6 +1970,9 @@
 						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>2</Value>
+							</ValueList>
 							<ModifierList>
 								<ModifierInfo>
 									<Modifier Name="" ID="{1A8AA8E5-A8A1-4D1B-BCA3-8EAD24B524D2}"/>
@@ -2820,6 +2687,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Player2_Sucess_006_flac" ID="{6FBB6CC4-2E7E-45E5-80F7-DDA57F084A16}" ShortID="1027019003" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D591EE88-6519-481F-BB68-4ED9C3BE97BE}"/>
@@ -2839,6 +2713,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Player2_Sucess_005_flac" ID="{80779EA4-586A-46F2-87C2-3984A30930EE}" ShortID="868303446" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D591EE88-6519-481F-BB68-4ED9C3BE97BE}"/>
@@ -2858,6 +2739,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Player2_Sucess_003_flac" ID="{9F7174EC-82E1-44D2-8587-BC58FBC014CF}" ShortID="337680662" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D591EE88-6519-481F-BB68-4ED9C3BE97BE}"/>
@@ -2880,6 +2768,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Player2_Sucess_001_flac" ID="{81F9D21B-435D-4282-9BB6-D76158F78C75}" ShortID="532494321" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D591EE88-6519-481F-BB68-4ED9C3BE97BE}"/>
@@ -2902,6 +2797,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Player2_Sucess_007_flac" ID="{07C4A747-14E9-4B64-B666-2A2FF7C7E5F2}" ShortID="759695903" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D591EE88-6519-481F-BB68-4ED9C3BE97BE}"/>
@@ -2921,6 +2823,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Player2_Sucess_004_flac" ID="{F16318C9-CE9C-4B53-A4A3-3E165770E3B8}" ShortID="140442382" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D591EE88-6519-481F-BB68-4ED9C3BE97BE}"/>
