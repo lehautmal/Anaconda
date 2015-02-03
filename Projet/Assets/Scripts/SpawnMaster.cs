@@ -7,30 +7,21 @@ public class SpawnMaster : MonoBehaviour
 		private HUD Interface;
 		private const int RowSize = 9;
 		private const float RowSizeF = 9f;
-		public double TopRowSpawnRate = 1000.0; // en milliseconde
-		public double MiddleRowSpawnRate = 1000.0;
-		public double BottomRowSpawnRate = 1000.0;
-		private double CurrentTopRowSpawnRate; // en milliseconde
-		private double CurrentMiddleRowSpawnRate;
-		private double CurrentBottomRowSpawnRate;
-		public float RandomizerRange = 2.0f;
-		public double TopRowSpawnGrowthRate = 2;
-		public double MiddleRowSpawnGrowthRate = 2;
-		public double BottomRowSpawnGrowthRate = 2;
-		public double SpawnGrowthInterval = 10.0;
+
+        public GameObject[] TopRow = new GameObject[RowSize];
+        public GameObject[] MiddleRow = new GameObject[RowSize];
+        public GameObject[] BottomRow = new GameObject[RowSize];
+        private Spawner[] TopRowSpawners = new Spawner[RowSize];
+        private Spawner[] MiddleRowSpawners = new Spawner[RowSize];
+        private Spawner[] BottomRowSpawners = new Spawner[RowSize];
+
+		private double TopRowSpawnRate = 1000.0; // en milliseconde
+        private double MiddleRowSpawnRate = 1000.0;
+        private double BottomRowSpawnRate = 1000.0;
 		private double TopRowNextSpawn = 1000;
 		private double MiddleRowNextSpawn = 1000;
 		private double BottomRowNextSpawn = 1000;
-		private double NextGrowth = 0;
 
-		//public GameObject SpawnerObject;
-		//private Spawner SpawnerScript;
-		public GameObject[] TopRow = new GameObject[RowSize];
-		public GameObject[] MiddleRow = new GameObject[RowSize];
-		public GameObject[] BottomRow = new GameObject[RowSize];
-		private Spawner[] TopRowSpawners = new Spawner[RowSize];
-		private Spawner[] MiddleRowSpawners = new Spawner[RowSize];
-		private Spawner[] BottomRowSpawners = new Spawner[RowSize];
 		private float InitialTime;
 		private int CurrentWaveNumber = 0;
 		public float TimeBetweenWave;
@@ -59,37 +50,16 @@ public class SpawnMaster : MonoBehaviour
 						}
 				}
 				IncreaseWave ();
-				/*
-		CurrentTopRowSpawnRate = TopRowSpawnRate;
-		CurrentMiddleRowSpawnRate = MiddleRowSpawnRate; 
-		CurrentBottomRowSpawnRate = BottomRowSpawnRate;
-
-		TopRowNextSpawn = CurrentTopRowSpawnRate;
-		MiddleRowNextSpawn = MiddleRowSpawnRate;
-		BottomRowNextSpawn = BottomRowSpawnRate;
-		NextGrowth = SpawnGrowthInterval;
-		*/
 		}
 
 		// Update is called once per frame
 		void Update ()
 		{
-
 				// Incrémente le # de wave <a toutes les TimeBetweenWave secondes.
-				if ((Time.time - InitialTime) > (TimeBetweenWave * CurrentWaveNumber)) {
+				if ((Time.time - InitialTime) > (TimeBetweenWave * CurrentWaveNumber) && CurrentWaveNumber < 10) {
 						IncreaseWave ();
+                        audio.Play();
 				}
-
-
-				// Vitesse de spawn.
-				// Type d'ennemis.
-				// Présence d'obstacles.
-
-
-	
-				//SpawnerScript.Spawn ();
-
-
 
 				if ((Time.time - InitialTime) > TopRowNextSpawn) {
 
@@ -97,10 +67,14 @@ public class SpawnMaster : MonoBehaviour
 						int Pos = (int)Mathf.Floor (RandomNumber);
 						TopRowSpawners [Pos].Spawn ();
 						TopRowNextSpawn += TopRowSpawnRate;
+<<<<<<< HEAD
 						Debug.Log ("Top Row" + Time.time);
 
 						//TopRowNextSpawn += ((Random.Range(0, RandomizerRange)) + CurrentTopRowSpawnRate);
 
+=======
+						//Debug.Log ("Top Row" + Time.time);
+>>>>>>> cd47678c010291ffd146bf6676cfbd53fdb14e12
 
 						if (TopBad) {
 								RandomNumber = Random.Range (0f, RowSizeF);
@@ -118,8 +92,7 @@ public class SpawnMaster : MonoBehaviour
 						int Pos = (int)Mathf.Floor (RandomNumber);
 						MiddleRowSpawners [Pos].Spawn ();
 						MiddleRowNextSpawn += MiddleRowSpawnRate;
-						Debug.Log ("Middle Row" + Time.time);
-						//TopRowNextSpawn += ((Random.Range(0, RandomizerRange)) + CurrentTopRowSpawnRate);
+						//Debug.Log ("Middle Row" + Time.time);
 
 						if (MidBad) {
 								RandomNumber = Random.Range (0f, RowSizeF);
@@ -138,8 +111,7 @@ public class SpawnMaster : MonoBehaviour
 						int Pos = (int)Mathf.Floor (RandomNumber);
 						BottomRowSpawners [Pos].Spawn ();
 						BottomRowNextSpawn += BottomRowSpawnRate;
-						Debug.Log ("Bottom Row" + Time.time);
-						//TopRowNextSpawn += ((Random.Range(0, RandomizerRange)) + CurrentTopRowSpawnRate);
+						//Debug.Log ("Bottom Row" + Time.time);
 					
 						if (BotBad) {
 								RandomNumber = Random.Range (0f, RowSizeF);
@@ -151,38 +123,19 @@ public class SpawnMaster : MonoBehaviour
 								BottomRowSpawners [Pos2].SpawnBad ();
 						}				
 				}
-		
-				/*
-		if ((Time.time - InitialTime) > MiddleRowNextSpawn) {
-			float RandomNumber = Random.Range(0f, RowSizeF);
-			int Pos = (int)Mathf.Floor(RandomNumber);
-			MiddleRowSpawners[Pos].Spawn();
-			MiddleRowNextSpawn += ((Random.Range(0, RandomizerRange)) + CurrentMiddleRowSpawnRate);
-			
-		}
-		if ((Time.time - InitialTime) > BottomRowNextSpawn) {
-			float RandomNumber = Random.Range(0f, RowSizeF);
-			int Pos = (int)Mathf.Floor(RandomNumber);
-			BottomRowSpawners[Pos].Spawn();
-			BottomRowNextSpawn += ((Random.Range(0, RandomizerRange)) + CurrentBottomRowSpawnRate);
-			
-		}
-		*/
-				/*
-		if ((Time.time - InitialTime) > NextGrowth ){
-			NextGrowth += SpawnGrowthInterval;
-			CurrentTopRowSpawnRate = CurrentTopRowSpawnRate / TopRowSpawnGrowthRate;
-			CurrentMiddleRowSpawnRate = CurrentMiddleRowSpawnRate / MiddleRowSpawnGrowthRate;
-			CurrentBottomRowSpawnRate = CurrentBottomRowSpawnRate / BottomRowSpawnGrowthRate;
-		}
-		*/
 		}
 
+        // Balancing du jeu. La difficulté augmente sur 10 waves.
 		public void IncreaseWave ()
 		{
+<<<<<<< HEAD
 				//CurrentWaveNumber = 1;
 				CurrentWaveNumber++;
 				Debug.Log ("WAVE # " + CurrentWaveNumber);
+=======
+				CurrentWaveNumber++;
+				//Debug.Log ("WAVE # " + CurrentWaveNumber);
+>>>>>>> cd47678c010291ffd146bf6676cfbd53fdb14e12
 				Interface.Level = CurrentWaveNumber;
 				
 				switch (CurrentWaveNumber) {
@@ -233,18 +186,7 @@ public class SpawnMaster : MonoBehaviour
 						TopRowSpawnRate = 6;
 						MiddleRowSpawnRate = 6;
 						BottomRowSpawnRate = 6;
-						TopRowNextSpawn = 2;
-						MiddleRowNextSpawn = TopRowNextSpawn + 2;
-						BottomRowNextSpawn = MiddleRowNextSpawn + 2;
-						TopBad = true;
-						MidBad = true;
-						BotBad = true;
 						break;
-				}
-		
-				
-				
+				}			
 		}
-
-
 }

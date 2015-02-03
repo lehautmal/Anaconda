@@ -12,6 +12,8 @@ public class NetBehavior : MonoBehaviour
 		public GameObject Trampoline;
 		public InteractiveCloth InterCloth;
 		private ClothRenderer ClothRender;
+
+        private bool NetIsBroken = false;
 		// Use this for initialization
 		void Start ()
 		{
@@ -25,7 +27,7 @@ public class NetBehavior : MonoBehaviour
 		void Update ()
 		{				
 				float Distance = Mathf.Abs (Player1.transform.position.x - Player2.transform.position.x);				
-				Vector3 VectorDistance = new Vector3 (Distance / 2, 0.5f, 0);
+				Vector3 VectorDistance = new Vector3 (Distance / 2, 0.6f, 0);
 				this.transform.position = Player1.transform.position + VectorDistance;
 
 				Vector3 VectorScale = new Vector3 (Distance, this.transform.localScale.y, this.transform.localScale.z);
@@ -34,6 +36,7 @@ public class NetBehavior : MonoBehaviour
 				if (Distance > MaxDistance) {
 						InterCloth.tearFactor = 0.5f;
 						Engine Engine = GameObject.Find ("Engine").GetComponent<Engine> ();
+                        PlayBrokenNetSound();
 						Engine.GameOver();
 				}
 
@@ -47,6 +50,15 @@ public class NetBehavior : MonoBehaviour
 						this.collider2D.enabled = true;
 				}
 		}
+
+        private void PlayBrokenNetSound()
+        {
+            if (!NetIsBroken)
+            {
+                audio.Play();
+                NetIsBroken = true;
+            }
+        }
 
 		/*
 		public void AddCollider (Collider col)

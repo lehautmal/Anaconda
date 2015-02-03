@@ -19,16 +19,11 @@ public class PersoControl : MonoBehaviour {
 		public float StunEndTime;
 		public ParticleSystem StunFX;
 
-	public GameObject Footsteps;
-	private float RandomNumber;
-
-
 	// Use this for initialization
 	void Start () {
 		StunFX.renderer.enabled = false;
 		StunFX.Pause ();
 		Animateur = Pompier.GetComponent<Animator>();
-		
 	}
 	
 	// Update is called once per frame
@@ -49,12 +44,10 @@ public class PersoControl : MonoBehaviour {
 		
 		float Distance = OtherPlayer.transform.position.x - this.transform.position.x;
 
-		if (MoveHorizontal != 0){
+		if (MoveHorizontal != 0)
 			Animateur.SetBool("IsMoving",true);
-		}
-		else {
+		else
 			Animateur.SetBool("IsMoving",false);
-		}
 
 		if (Distance > Stretch)
 		{
@@ -79,20 +72,21 @@ public class PersoControl : MonoBehaviour {
 		rigidbody2D.velocity = movement;
 
 	}
-
-	/*public GameObject FootstepsBox()
-	{
-		Footsteps = MonoBehaviour.Instantiate (FootstepsBox, this.transform.position, this.transform.rotation) as GameObject;
-	}*/
-
 	
 	void OnCollisionEnter2D (Collision2D col)
 		{
-			if (col.gameObject.name != "Floor" && col.gameObject.name != "Filet" && col.gameObject.name != "Plane_coll") {						
-						IsStunned = true;
-						StunFX.renderer.enabled = true;
-						StunFX.Play ();
-						StunEndTime = Time.time + StunDuration;
-				}
+            if (col.gameObject.tag == "Mur" || col.gameObject.tag == "Player")
+              {
+                   Stun();
+			}
 		}
+
+    public void Stun()
+    {
+        IsStunned = true;
+        StunFX.renderer.enabled = true;
+        StunFX.Play();
+        StunEndTime = Time.time + StunDuration;
+        audio.Play();
+    }
 }
