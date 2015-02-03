@@ -73,11 +73,18 @@ public class PersoControl : MonoBehaviour {
 	
 	void OnCollisionEnter2D (Collision2D col)
 		{
-			if (col.gameObject.name != "Floor" && col.gameObject.name != "Filet" && col.gameObject.name != "Plane_coll") {						
-						IsStunned = true;
-						StunFX.renderer.enabled = true;
-						StunFX.Play ();
-						StunEndTime = Time.time + StunDuration;
-				}
+            if (col.gameObject.tag == "Mur" || col.gameObject.tag == "Player")
+              {
+                   Stun();
+			}
 		}
+
+    public void Stun()
+    {
+        IsStunned = true;
+        StunFX.renderer.enabled = true;
+        StunFX.Play();
+        StunEndTime = Time.time + StunDuration;
+        audio.Play();
+    }
 }

@@ -11,16 +11,33 @@ public class Engine : MonoBehaviour {
 	//private Fader Fader;
 
 	public int NbDeathMax = 3;
-
 	private bool PlayerDead = false;
 	public int FinalCountdown = 3;
 	private float DeathTime;
+
+    public AudioClip[] AudioFails;
+    public AudioClip[] AudioWins;
+    private AudioSource[] Fails;
+    private AudioSource[] Wins;
 
 	// Use this for initialization
 	void Start () {
 
 		Interface = this.GetComponent<HUD> ();
-		audio.Play ();
+
+        Fails = new AudioSource[AudioFails.Length];
+        Wins = new AudioSource[AudioWins.Length];
+        for (int i = 0; i < AudioFails.Length; i++)
+        {
+            Fails[i] = gameObject.AddComponent<AudioSource>();
+            Fails[i].clip = AudioFails[i];
+        }
+        Wins = new AudioSource[Wins.Length];
+        for (int i = 0; i < AudioWins.Length; i++)
+        {
+            Wins[i] = gameObject.AddComponent<AudioSource>();
+            Wins[i].clip = AudioWins[i];
+        }
 	}
 	
 	// Update is called once per frame
@@ -36,6 +53,7 @@ public class Engine : MonoBehaviour {
 	{
 		Interface.Death++;
 		NbDied++;
+        PlaySound(Fails);
 		if (NbDied > NbDeathMax) 
 		{
 			GameOver();
@@ -45,6 +63,7 @@ public class Engine : MonoBehaviour {
 	public void UpdateSaved()
 	{
 		Interface.Saved++;
+        PlaySound(Wins);
 	}
 
 	public void GameOver()
@@ -56,9 +75,17 @@ public class Engine : MonoBehaviour {
 				}
 	}
 
-	public void updateGameStatus ()
-	{
+    void PlaySound(AudioSource Sound)
+    {
+        Sound.Play();
+    }
 
-	}
+    void PlaySound(AudioSource[] Sounds)
+    {
+        if (Sounds.Length > 0)
+        {
+            Sounds[Random.Range(0, Sounds.Length)].Play();
+        }
+    }
 
 }
