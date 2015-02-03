@@ -70,11 +70,6 @@ ModelImporter:
     100128: Main_G
     100130: Pompier
     100132: Tete
-    100134: Bip001 Footsteps
-    100136: Bip001 L ForeTwist
-    100138: Bip001 L ForeTwist1
-    100140: Bip001 R ForeTwist
-    100142: Bip001 R ForeTwist1
     400000: //RootNode
     400002: Avant-Bras_D
     400004: Avant-Bras_G
@@ -142,11 +137,6 @@ ModelImporter:
     400128: Main_G
     400130: Pompier
     400132: Tete
-    400134: Bip001 Footsteps
-    400136: Bip001 L ForeTwist
-    400138: Bip001 L ForeTwist1
-    400140: Bip001 R ForeTwist
-    400142: Bip001 R ForeTwist1
     4300000: Pompier
     7400000: Marche
     7400002: Idle
