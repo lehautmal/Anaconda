@@ -96,7 +96,7 @@
  <HintPath>G:/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/Editor/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="StrumpyShaderEditor">
- <HintPath>G:/Anaconda/Projet/Assets/StrumpyShaderEditor/Editor/StrumpyShaderEditor.dll</HintPath>
+ <HintPath>G:/Projet_git/Anaconda/Projet/Assets/StrumpyShaderEditor/Editor/StrumpyShaderEditor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>G:/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
